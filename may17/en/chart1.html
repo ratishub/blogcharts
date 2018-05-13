@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Five data points about homophobia in Georgia five years after the IDAHOT riot</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>Which of these people would you not wish to have as your neighbors most? <br /> <b>By Frequency of attending religious services and fasting (%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC Caucasus Barometer 2017)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        categories: [{
+			name: 'Apart from special occasions \n such as weddings and funerals,\nabout how often do you attend religious services nowadays?', 
+			categories: ['Less often or never', 'At least once a week']
+			},{
+			name: 'How often do you fast \n when it is required by your religion?', 
+			categories: ['Less often or never', 'Often or Always']
+			}]
+	}],
+	
+    yAxis: {
+        min: 0,
+        max: 100,
+		tickInterval: 20,
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal',
+						dataLabels: {
+							enabled: true,
+						style: {
+							color: 'black',
+							fontWeight: 'bold',
+							textOutline: false
+					   }
+					}
+        }
+    },
+    series: [{ 
+		name: 'Other groups',
+		color:  '#ff0000',
+        data: [76, 81, 76, 81]
+    },{ 
+		name: 'Homosexuals',
+		color:  '#0000ff',
+        data: [24, 19, 24, 19]
+    }]
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
