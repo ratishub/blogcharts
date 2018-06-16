@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>The EU, USA, or Russia: Who is believed to be able to support Georgia best?</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>Who can currently best support Georgia – the EU, USA or Russia?<br /> <b>By Which ethnic group do you consider yourself a part of?; <br /> <b>What is the highest level of education that you have completed?; <br /> <b> Age group(%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(EF/CRRC EU survey, 2017)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        categories: [{
+			name: 'Ethnicity', 
+			categories: ['Ethnic Georgians', 'Ethnic minorities']
+			},{
+			name: 'Education', 
+			categories: ['Secondary or lower', 'Secondary technical', 'Higher']
+			},{
+			name: 'Age group',
+			categories: ['18-35', '36-55', '56+']
+			}]
+//		labels: {
+//            rotation: -90
+//        }
+	}],
+	
+    yAxis: {
+        min: 0,
+        max: 100,
+		tickInterval: 20,
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal',
+						dataLabels: {
+							enabled: true,
+						style: {
+							color: 'black',
+							fontWeight: 'bold',
+							textOutline: false
+					   }
+					}
+        }
+    },
+    series: [{ 
+		name: 'DK/RA',
+		color:  '#404040',
+        data: [8, 14, 11, 8, 7, 10, 9, 8]
+    },{ 
+		name: 'Neither',
+		color:  '#767171',
+        data: [9, 4, 7, 9, 12, 7, 8, 10]
+    },{ 
+		name: 'Russia',
+		color:  '#6c8e80',
+        data: [20, 53, 30, 25, 15, 22, 25, 25]
+    },{ 
+		name: 'USA',
+		color:  '#aaa4d4',
+        data: [24, 11, 20, 29, 22, 19, 19, 31]
+    },{ 
+		name: 'EU',
+		color:  '#529cb6',
+        data: [38, 18, 32, 30, 44, 42, 40, 25]
+    }]
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
