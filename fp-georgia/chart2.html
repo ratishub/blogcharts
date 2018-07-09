@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>What predicts foreign policy preferences in Georgia?</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="http://blacklabel.github.io/grouped_categories/grouped-categories.js"></script>
+        <div class="centerTest">
+            <span style="width: 100%;text-align: center">What would be the best choice for Georgia?</br> By Support democracy?</span>
+        </div>
+
+<div id="container1" style="min-width:300px;
+    height:250px;
+    margin-right:10px;
+    float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container2" style="min-width:300px;
+    height:250px;
+    margin-right:10px;
+    float:left;"></div>
+<div class="legend"></div>
+<div class="centerLeft">
+<span style="width: 80%;text-align: right">Predicted probabilities, 95% Confidence Intervals </br> CRRC Caucasus Barometer 2017, Georgia </span>
+</div>
+
+ <style type="text/css">
+.centerTest {
+    width:90%;
+    text-align:center;
+}
+.centerLeft {
+    width:20%;
+    text-align:left;
+	font-size: 12px;
+}
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+
+
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container1', {
+    chart: {
+        zoomType: 'xy'
+    },
+	    exporting: {
+        enabled: false
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+	title: null,
+	
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+	        title: {
+            text: 'Probability'
+        },
+			categories: ['Yes', 'No']
+			}],
+	
+    yAxis: [{
+	    gridLineWidth: 0,
+        minorGridLineWidth: 0,
+        min: 0,
+        max: 1,
+		tickInterval: 0.2,
+		labels: {
+			enabled: true
+		},
+        title: {
+            text: 'Support democracy?'
+        }
+    },
+			{
+			title: false,
+			
+			series: {
+					lineWidth: 0
+				}	
+			}],
+    legend: {
+
+		enabled: true
+    },
+    plotOptions: {
+        series: {
+				dataLabels: {
+					enabled: false,
+					style: {
+						color: 'black',
+						fontWeight: 'bold',
+						textOutline: false
+				   }
+				},
+        },
+    },
+    series: [
+	{ 
+		name: 'EU',
+		color:  '#4169e1',
+		type: 'spline',
+		lineWidth: 0,
+		pointPlacement: -0.3,
+        data: [0.19, 0.40]
+    },{ 
+		name: 'EAEU',
+		color:  'maroon',
+		type: 'spline',
+		pointPlacement: -0.1,
+		lineWidth: 0,
+        data: [0.13, 0.08]
+    },{ 
+		name: 'Both',
+		color:  '#d8bfd8',
+		type: 'spline',
+		lineWidth: 0,
+		pointPlacement: 0.1,
+        data: [0.42, 0.38]
+    },{ 
+		name: 'None',
+		color:  '#c2b280',
+		type: 'spline',
+		lineWidth: 0,
+		pointPlacement: 0.3,
+        data: [0.07, 0.06]
+    },{
+		name: 'EU',
+		color: '#4169e1',
+		type: 'errorbar',
+		pointPlacement: -0.3,
+		whiskerLength: '20%',
+		data: [[.1535684, .2243995],[.3552149, .4368356]]
+	},{
+		name: 'EAEU',
+		color: 'maroon',
+		type: 'errorbar',
+		pointPlacement: -0.1,
+		whiskerLength: '20%',
+		data: [[.0982083, .1556687],[.0627815, .1053254]]
+	},{
+		name: 'Both',
+		color: '#d8bfd8',
+		type: 'errorbar',
+		pointPlacement: 0.1,
+		whiskerLength: '20%',
+		data: [[.3721714, .4713543],[.330919, .4199906]]
+	},{
+		name: 'None',
+		color: '#c2b280',
+		type: 'errorbar',
+		pointPlacement: 0.3,
+		whiskerLength: '20%',
+		data: [[.0453146, .0923149],[.0371471, .0761593]]
+	}]
+});
+
+Highcharts.chart('container2', {
+    chart: {
+        zoomType: 'xy'
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+	title: null,
+	
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        title: {
+            text: 'Probability'
+        },
+			categories: ['Yes', 'No']
+			}],
+	
+    yAxis: [{
+	    gridLineWidth: 0,
+        minorGridLineWidth: 0,
+        min: 0,
+        max: 1,
+		tickInterval: 0.2,
+		labels: {
+			enabled: false
+		},
+        title: {
+            text: ''
+        }
+    },
+			{
+			title: false,
+			
+			series: {
+					lineWidth: 0
+				}	
+			}],
+    legend: {
+		enabled: true
+    },
+    plotOptions: {
+        series: {
+				dataLabels: {
+					enabled: false,
+					style: {
+						color: 'black',
+						fontWeight: 'bold',
+						textOutline: false
+				   }
+			},
+			
+        }
+    },
+    series: [
+	{ 
+		name: 'EU',
+		color:  '#4169e1',
+		type: 'spline',
+		lineWidth: 0,
+		pointPlacement: -0.3,
+        data: [0.20, 0.37]
+    },{ 
+		name: 'EAEU',
+		color:  'maroon',
+		type: 'spline',
+		pointPlacement: -0.1,
+		lineWidth: 0,
+        data: [0.12, 0.08]
+    },{ 
+		name: 'Both',
+		color:  '#d8bfd8',
+		type: 'spline',
+		lineWidth: 0,
+		pointPlacement: 0.1,
+        data: [0.39, 0.34]
+    },{ 
+		name: 'None',
+		color:  '#c2b280',
+		type: 'spline',
+		lineWidth: 0,
+		pointPlacement: 0.3,
+        data: [0.07, 0.09]
+    },{
+		name: 'EU',
+		color: '#4169e1',
+		type: 'errorbar',
+		pointPlacement: -0.3,
+		whiskerLength: '20%',
+		data: [[.161059, .2326545],[.332014, .4095767]]
+	},{
+		name: 'EAEU',
+		color: 'maroon',
+		type: 'errorbar',
+		pointPlacement: -0.1,
+		whiskerLength: '20%',
+		data: [[.0897561, .1491971],[.059059, .1032049]]
+	},{
+		name: 'Both',
+		color: '#d8bfd8',
+		type: 'errorbar',
+		pointPlacement: 0.1,
+		whiskerLength: '20%',
+		data: [[.3402046, .4434897],[.2980463, .3801617]]
+	},{
+		name: 'None',
+		color: '#c2b280',
+		type: 'errorbar',
+		pointPlacement: 0.3,
+		whiskerLength: '20%',
+		data: [[.0470266, .092391],[.0626932, .1116207]]
+	}]
+});
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
