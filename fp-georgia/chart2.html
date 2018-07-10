@@ -103,7 +103,7 @@ Highcharts.chart('container1', {
 	
     xAxis: [{
 	        title: {
-            text: 'Probability'
+            text: 'EU vs. EEU'
         },
 			categories: ['Yes', 'No']
 			}],
@@ -118,7 +118,7 @@ Highcharts.chart('container1', {
 			enabled: true
 		},
         title: {
-            text: 'Support democracy?'
+            text: 'Probability'
         }
     },
 			{
@@ -239,7 +239,7 @@ Highcharts.chart('container2', {
 	
     xAxis: [{
         title: {
-            text: 'Probability'
+            text: 'NATO vs. CSTO'
         },
 			categories: ['Yes', 'No']
 			}],
@@ -282,14 +282,14 @@ Highcharts.chart('container2', {
     },
     series: [
 	{ 
-		name: 'EU',
+		name: 'NATO',
 		color:  '#4169e1',
 		type: 'spline',
 		lineWidth: 0,
 		pointPlacement: -0.3,
         data: [0.20, 0.37]
     },{ 
-		name: 'EAEU',
+		name: 'CSTO',
 		color:  'maroon',
 		type: 'spline',
 		pointPlacement: -0.1,
@@ -310,14 +310,14 @@ Highcharts.chart('container2', {
 		pointPlacement: 0.3,
         data: [0.07, 0.09]
     },{
-		name: 'EU',
+		name: 'NATO',
 		color: '#4169e1',
 		type: 'errorbar',
 		pointPlacement: -0.3,
 		whiskerLength: '20%',
 		data: [[.161059, .2326545],[.332014, .4095767]]
 	},{
-		name: 'EAEU',
+		name: 'CSTO',
 		color: 'maroon',
 		type: 'errorbar',
 		pointPlacement: -0.1,
