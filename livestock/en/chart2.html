@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Livestock care and livestock-related decision making in rural Georgia: Are there any gender differences?</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>Speaking of your household, who does the following? (%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC/FAO survey, August 2017)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: {
+
+			categories: ['Who usually takes decisions on selling livestock?', 'Who usually took decisions on vaccinating or registering your livestock in the last 12 months?', 'Who usually takes decisions on selling livestock products?']
+
+			},	
+    yAxis: {
+        min: 0,
+        max: 100,
+		tickInterval: 20,
+        title: {
+            text: ''
+        },
+			reversed: false
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal',
+						dataLabels: {
+							enabled: true,
+						style: {
+							color: 'black',
+							fontWeight: 'bold',
+							textOutline: false
+					   }
+					}
+        }
+    },
+    series: [{ 
+		name: 'DK/RA',
+		color:  'grey',
+        data: [null,1,1]
+    },{ 
+		name: 'Not applicable',
+		color:  '#ff0000',
+        data: [39,14,46]
+    },{ 
+		name: 'Male and female members of the household equally',
+		color:  '#ffd966',
+        data: [32,47,30]
+    },{ 
+		name: 'Mostly female members of the  household ',
+		color:  '#a9d18e',
+        data: [7,11,11]
+    },{ 
+		name: 'Mostly male members of the household',
+		color:  '#9dc3e6',
+        data: [22,27,12]
+    }]
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
