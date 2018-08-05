@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>People’s views about who should pay for health insurance in Georgia</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>Should people in Georgia cover their and their family members’ health insurance expenses themselves,<br /> <b>should the government fully cover these expenses,<br /> <b>or should these expenses be covered partially by the people and partially by the government?<br /> <b>By Settlement type and Educational attainment (%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC/TI Georgia survey, March 2016)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        categories: [{
+			name: 'Educational attainment', 
+			categories: ['Secondary or lower', 'Secondary technical', 'Higher than secondary']
+			},{
+			name: 'Settlement type', 
+			categories: ['Capital','Other urban','Rural']
+			}]
+//		labels: {
+//            rotation: -90
+//        }
+	}],
+    yAxis: {
+        min: 0,
+        max: 100,
+		tickInterval: 20,
+        title: {
+            text: ''
+        },
+			reversed: false
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal',
+						dataLabels: {
+							enabled: true,
+						style: {
+							color: 'black',
+							fontWeight: 'bold',
+							textOutline: false
+					   }
+					}
+        }
+    },
+    series: [{ 
+		name: 'DK/RA',
+		color:  'grey',
+        data: [2, 1, 1, 1, 1, 2]
+    },{ 
+		name: 'These expenses should be covered partially by the people and partially by the government',
+		color:  '#9dc3e6',
+        data: [38, 37, 56, 56, 45, 35]
+    },{ 
+		name: 'The government should fully cover these expenses',
+		color:  '#ed7d31',
+        data: [59, 59, 39, 40, 50, 63]
+    },{ 
+		name: 'People should cover their and their family members\' health insurance expenses themselves',
+		color:  '#92d050',
+        data: [1, 2, 4, 3, 4, 1]
+    }]
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
