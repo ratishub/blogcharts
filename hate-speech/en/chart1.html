@@ -10,7 +10,7 @@
     
   </style>
 
-  <title>Views on marital (in)fidelity in Georgia</title>
+  <title>Hate crime, hate speech, and discrimination in Georgia, August 2018</title>
 
   
 </head>
@@ -42,7 +42,7 @@
 
 Highcharts.chart('container', {
     chart: {
-        type: 'column'
+        type: 'bar'
     },
 	credits: {enabled: false
 	},
@@ -61,13 +61,13 @@ Highcharts.chart('container', {
 
 
     title: {
-        text: '<b>To what extent, in your opinion, can cheating on<br /> <b>one\'s spouse be justified or not? (%)',
+        text: '<b>Can you please tell me whether you approve or disapprove<br><b>of people like you doing business with a(n) ...(%)',
 		style:{
 		fontFamily: "BPG_upper"
 		}
     },
     subtitle: {
-        text: '(CRRC Caucasus Barometer 2017, Georgia)',
+        text: '(Hate crime, hate speech, and discrimination in Georgia, August 2018)',
 		style:{
 			fontFamily: "BPG_lower"
 		}
@@ -81,30 +81,59 @@ Highcharts.chart('container', {
 	},
 	
     xAxis: {
-			categories: ['Tbilisi', 'Other urban settlements', 'Rural settlements']
-	},
+
+			categories: ["A homosexual?",
+							"Jehovah Witness?",
+							"Avar?",
+							"Romani?",
+							"African?",
+							"Arab?",
+							"Chinese?",
+							"Indian?",
+							"Iranian?",
+							"Kurd or Yazidi?",
+							"Kists?",
+							"Turk?",
+							"Turk Meskhetian?",
+							"Muslim?",
+							"Armenian?",
+							"Jewish person?",
+							"Eastern European?",
+							"Osset?",
+							"Azerbaijani?",
+							"Abkhaz?",
+							"Western European?",
+							"American?",
+							"Russian?",
+							"A person with a disability?",
+							"Georgian?"],
+				reversed: false,
+				labels : {
+            style: {
+                width: '500px'
+            }
+				}
+			},
 	
     yAxis: {
         min: 0,
         max: 100,
-		tickInterval: 20,
+		tickInterval: 10,
         title: {
             text: ''
-        }
+        },
+		reversed: false
     },
     legend: {
-        //align: 'center',
-        //verticalAlign: 'top',
-        //floating: true,
-		reversed: false
+		reversed: true
     },
     plotOptions: {
         series: {
-            stacking: null,
-			dataLabels: {
+            stacking: 'normal',
+						dataLabels: {
 							enabled: true,
 						style: {
-							color: 'black',
+							color: '#444444',
 							fontWeight: 'bold',
 							textOutline: false
 					   }
@@ -112,21 +141,30 @@ Highcharts.chart('container', {
         }
     },
     series: [{ 
-		name: 'Can never be justified',
-		color:  '#F4B081',
-        data: [78, 89, 90],
-		visible: false,
-		column: {
-            enabled: false
-        },
-		line: {
-			enabled: false
-		}
-
+		name: "Never heard of this group",
+		showInLegend: false,
+		color:  '#444444',
+        data: [null,1,27,4,null,null,null,null,null,1,2,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
     },{ 
-		name: 'Can be justified',
-		color:  '#C55A11',
-        data: [22, 11, 10]
+		name: "Refuse to answer",
+		showInLegend: false,
+		color:  '#999999',
+        data: [1,1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+    },{ 
+		name: "Don\'t know",
+		showInLegend: false,
+		color:  'grey',
+        data: [7,7,9,7,7,5,4,5,5,8,9,4,8,4,3,6,5,4,3,4,5,3,2,3,1]
+    },{ 
+		name: "Disapprove",
+		showInLegend: false,
+		color:  'red',
+        data: [70,58,24,41,39,39,39,37,37,32,27,32,27,29,26,20,19,19,21,18,16,17,17,6,1]
+    },{ 
+		name: "Approve",
+		showInLegend: false,
+		color:  'green',
+        data: [22,33,40,48,54,56,57,57,58,58,62,64,64,67,71,74,75,76,77,77,79,80,80,91,98]
     }]
 
 });
