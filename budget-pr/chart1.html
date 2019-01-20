@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Budget priorities are similar to people's spending priorities</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>The state budget is limited. What are your top three priorities for spending,<br />understanding it means cutting elsewhere - Healthcare (%)<br /> ',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC/NDI Survey, June 2018)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        categories: [{
+			name: 'Age group', 
+			categories: ['18-35', '36-55', '56+']
+			},{
+			name: 'Sex', 
+			categories: ['Male', 'Female']
+			},{
+			name: 'E
+			thnicity', 
+			categories: ['Georgian', 'Ethnic minority']
+			}]
+//		labels: {
+//            rotation: -90
+//        }
+	}],
+	
+    yAxis: {
+        min: 0,
+        max: 100,
+		tickInterval: 20,
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: false
+    },
+    plotOptions: {
+        series: {
+            stacking: null,
+			dataLabels: {
+							enabled: true,
+						style: {
+							color: 'white',
+							fontWeight: 'bold',
+							textOutline: false
+					   }
+					}
+        }
+    },
+    series: [{ 
+		name: '2015',
+		color:  '#4f81bd',
+        data: [53, 66, 65, 57, 65, 68, 46]
+    }]
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
