@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Are there predictors of not knowing and refusing to answer?</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>Predicted number of don\'t know responses<br /><b>By Presence of non-interviewed people, settlement type, education level, sex, age, and ethnicity<br /> ',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC Caucasus Barometer, 2017)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        categories: [{
+			name: 'Additional people',
+			categories: ['At least one additional person', 'No additional person']
+			},{
+			name: 'Settlement type', 
+			categories: ['Capital', 'Other urban', 'Rural']
+			},{
+			name: 'Education level', 
+			categories: ['Tertiary', 'Vocational', 'Secondary']
+			},{
+			name: 'Sex', 
+			categories: ['Female', 'Male']
+			},{
+			name: 'Age', 
+			categories: ['56+', '36-55', '18-35']
+			},{
+			name: 'Ethnicity', 
+			categories: ['Non-Georgian', 'Georgian']
+			}]
+//		labels: {
+//            rotation: -90
+//        }
+	}],
+	
+    yAxis: {
+        min: 0,
+        max: 20,
+		tickInterval: 20,
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: false
+    },
+    plotOptions: {
+        series: {
+            stacking: null,
+			dataLabels: {
+							enabled: true,
+						style: {
+							color: 'black',
+							fontWeight: 'bold',
+							textOutline: false
+					   }
+					}
+        }
+    },
+    series: [{
+		showInLegend: false,
+		name: '2015',
+        data: [
+		{
+            y: 4,
+            color: '#c3d69b'
+        },
+		{
+            y: 5,
+            color: '#c3d69b'
+        },
+		{
+            y: 5,
+            color: '#93cddd'
+        },
+		{
+            y: 10,
+            color: '#93cddd'
+        },
+		{
+            y: 10,
+            color: '#93cddd'
+        },
+		{
+            y: 3,
+            color: '#d99694'
+        },
+		{
+            y: 4,
+            color: '#d99694'
+        },
+		{
+            y: 5,
+            color: '#d99694'
+        },
+		{
+            y: 5,
+            color: '#8da0cb'
+        },
+		{
+            y: 4,
+            color: '#8da0cb'
+        },
+		{
+            y: 6,
+            color: '#ffd92f'
+        },
+		{
+            y: 5,
+            color: '#ffd92f'
+        },
+		{
+            y: 5,
+            color: '#ffd92f'
+        },
+		{
+            y: 10,
+            color: '#e5c494'
+        },
+		{
+            y: 4,
+            color: '#e5c494'
+        }]
+    }]
+
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
