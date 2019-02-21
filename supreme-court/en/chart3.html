@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Selection of Supreme Court judges: The public’s knowledge and attitudes about the process</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 300; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>With regards to the selection of candidates, do you agree or disagree <br><b>that proposed ten candidates were selected <br><b>based on honesty and competence?',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(%, of those, 50%, who has heard of the selection process of<br>Supreme Court judges)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: {
+
+			categories: ["Agree",
+							"Disagree",
+							"Don't know/have no opinion",
+							"Refuse to answer"],
+				reversed: false,
+				labels : {
+            style: {
+                width: '500px'
+            }
+				}
+			},
+	
+    yAxis: {
+        min: 0,
+        max: 50,
+		tickInterval: 10,
+        title: {
+            text: ''
+        },
+		reversed: false
+    },
+    legend: {
+		reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: undefined,
+						dataLabels: {
+							enabled: true,
+						style: {
+							color: '#444444',
+							fontWeight: 'bold',
+							textOutline: false
+					   }
+					}
+        }
+    },
+    series: [{
+		showInLegend: false,
+		name: null,
+        data: [
+		{
+            y: 13,
+            color: '#0cce6b'
+        },
+		{
+            y: 41,
+            color: '#ef8354'
+        },
+		{
+            y: 45,
+            color: '#404040'
+        },
+		{
+            y: 1,
+            color: '#999999'
+        }
+		]
+		}]
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
