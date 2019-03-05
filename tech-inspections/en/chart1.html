@@ -10,13 +10,14 @@
     
   </style>
 
-  <title>Selection of Supreme Court judges: The public’s knowledge and attitudes about the process</title>
+  <title>Georgians support technical inspections of motor vehicles, even given the financial burden</title>
 
   
 </head>
 
 <body>
   <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="http://code.highcharts.com/stock/highstock.js"></script>
 <script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
@@ -42,7 +43,7 @@
 
 Highcharts.chart('container', {
     chart: {
-        type: 'bar'
+        zoomType: 'xy'
     },
 	credits: {enabled: false
 	},
@@ -61,13 +62,13 @@ Highcharts.chart('container', {
 
 
     title: {
-        text: '<b>Do you trust or distrust the Georgian Supreme Court<br><b>judges\' selection process?',
+        text: '<b>Is it necessary or unnecessary<br><b>to introduce technical inspections for cars?<br><b>By Party affiliation (%)',
 		style:{
 		fontFamily: "BPG_upper"
 		}
     },
     subtitle: {
-        text: '(%, of those, 50%, who has heard of the selection process of <br> Supreme Court judges)',
+        text: '(CRRC/NDI Survey, June 2018)',
 		style:{
 			fontFamily: "BPG_lower"
 		}
@@ -77,26 +78,26 @@ Highcharts.chart('container', {
 				condition: {
 				  maxWidth: 500
 				}
-			  }]
+		}]
 	},
 	
     xAxis: {
-
-			categories: ["Yes",
-							"No",
-							"Don't know/have no opinion",
-							"Refuse to answer"],
-				reversed: true,
-				labels : {
-            style: {
+		categories: ["Georgian Dream",
+							"United National Movement",
+							"Other",
+							"None",
+							"DK/RA"],
+		reversed: true,
+		labels : {
+        style: {
                 width: '500px'
-            }
-				}
-			},
+              }
+			}
+		},
 	
     yAxis: {
         min: 0,
-        max: 50,
+        max: 100,
 		tickInterval: 10,
         title: {
             text: ''
@@ -111,37 +112,46 @@ Highcharts.chart('container', {
             stacking: undefined,
 						dataLabels: {
 							enabled: true,
-						style: {
-							color: '#444444',
-							fontWeight: 'bold',
-							textOutline: false
-					   }
-					}
-        }
-    },
+							style: {
+								color: '#444444',
+								fontWeight: 'bold',
+								textOutline: false
+							}
+						}
+				}
+		},
     series: [{
 		showInLegend: false,
-		align: 'right',
-		name: null,
+        type: 'bar',
         data: [
-		{
-            y: 22,
-            color: '#0cce6b'
+				{
+            y: 93,
+            color: '#8da0cb'
         },
 		{
-            y: 48,
-            color: '#ef8354'
+            y: 80,
+            color: '#fc8d62'
         },
 		{
-            y: 30,
-            color: '#404040'
+            y: 94,
+            color: '#66c2a5'
         },
 		{
-            y: 0,
+            y: 91,
+            color: '#a6d854'
+        },
+		{
+            y: 86,
             color: '#999999'
         }
-		]
-		}]
+	]
+    }, {
+        type: 'errorbar',
+		dataLabels: {
+			enabled: false
+		},
+        data: [[90, 95], [73, 88], [90, 97], [89, 93], [81, 90]]
+    }]
 
 });
 
