@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Parents think Georgia’s schools are fine. But are students actually learning?  </title>
+
+  
+</head>
+
+<body>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/custom/world-palestine-highres.js"></script>
+
+<div id="container"></div>
+
+
+<!--div id="container" style="height: 500px; min-width: 310px; max-width: 480px; margin: 0 auto"></div-->
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+
+#container {
+    height: 500px; 
+    min-width: 310px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+
+// Prepare demo data
+// Data is joined to map using value of 'hc-key' property by default.
+// See API docs for 'joinBy' for more info on linking data and map.
+var test = [
+		['sg', 551.7],
+		['hk', 532.7],
+		['jp', 528.7],
+		['mo', 527.3],
+		['ee', 524.3],
+		['ca', 523.7],
+		['tw', 523.7],
+		['fi', 522.7],
+		['kr', 519],
+		['cn', 514.3],
+		['ie', 509.3],
+		['si', 509.3],
+		['de', 508],
+		['nl', 508],
+		['ch', 506.3],
+		['nz', 505.7],
+		['dk', 504.3],
+		['no', 504.3],
+		['pl', 503.7],
+		['be', 502.7],
+		['au', 502.3],
+		['vn', 502.3],
+		['gb', 499.7],
+		['pt', 497],
+		['fr', 495.7],
+		['se', 495.7],
+		['at', 492.3],
+		['ru', 492],
+		['es', 491.7],
+		['cz', 490.7],
+		['us', 487.7],
+		['lv', 486.7],
+		['it', 485.3],
+		['lu', 483.3],
+		['is', 481],
+		['hr', 475.3],
+		['lt', 475],
+		['hu', 474.7],
+		['il', 472],
+		['ar', 468.7],
+		['mt', 463.7],
+		['sk', 463],
+		['gr', 458.7],
+		['cl', 443],
+		['bg', 439.7],
+		['cy', 437.7],
+		['ro', 437.7],
+		['ae', 432.7],
+		['uy', 430],
+		['tr', 424.3],
+		['tt', 423],
+		['md', 421.3],
+		['me', 418.7],
+		['cr', 415.7],
+		['al', 415],
+		['th', 415],
+		['mx', 411.7],
+		['co', 410.3],
+		['qa', 407.3],
+		['ge', 405.3],
+		['jo', 399],
+		['id', 395.3],
+		['br', 395],
+		['pe', 394],
+		['lb', 376.3],
+		['tn', 371.3],
+		['mk', 369],
+		['dz', 362],
+		['kv', 355.7],
+		['do', 339.3]
+];
+
+// Create the chart
+Highcharts.mapChart('container', {
+    chart: {
+        map: 'custom/world-palestine-highres',
+		joinBy: ['iso-a2', 'code']
+    },
+
+    title: {
+        text: 'PISA worldwide ranking (average score of math, science, and reading)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+
+    subtitle: {
+        text: 'Source: OECD, 2015-2016',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+        legend: {
+            layout: 'vertical',
+            borderWidth: 0,
+            backgroundColor: 'rgba(255,255,255,0.85)',
+            floating: true,
+            horizontalAlign: 'left',
+            y: 25,
+            style: {
+                    fontFamily: 'BPG_upper'
+                }
+        },
+
+        mapNavigation: {
+            enabled: true
+        },
+
+    plotOptions: {
+        map: {
+            allAreas: false,
+            joinBy: ['iso-a2', 'code'],
+            dataLabels: {
+                enabled: true,
+                color: '#FFFFFF',
+                style: {
+                    fontFamily: 'BPG_upper'
+                },
+                // Only show dataLabels for areas with high label rank
+                format: null,
+                formatter: function () {
+                    if (this.point.properties && this.point.properties.labelrank.toString() < 5) {
+                        return this.point.properties['iso-a2'];
+                    }
+                }
+            },
+		tooltip: {
+            formatter: function () {
+                var serieI = this.series.index;
+                var index = code.indexOf(this.x);
+                var comment = test[index];
+                return '-->'+comment;
+            }
+        },
+
+        }
+    },
+
+    series: [{
+        name: 'Above 500',
+        data: [{code:'SG', value: 551.7},
+				{code:'HK', value: 532.7},
+				{code:'JP', value: 528.7},
+				{code:'MO', value: 527.3},
+				{code:'EE', value: 524.3},
+				{code:'CA', value: 523.7},
+				{code:'TW', value: 523.7},
+				{code:'FI', value: 522.7},
+				{code:'KR', value: 519},
+				{code:'CN', value: 514.3},
+				{code:'IE', value: 509.3},
+				{code:'SI', value: 509.3},
+				{code:'DE', value: 508},
+				{code:'NL', value: 508},
+				{code:'CH', value: 506.3},
+				{code:'NZ', value: 505.7},
+				{code:'DK', value: 504.3},
+				{code:'NO', value: 504.3},
+				{code:'PL', value: 503.7},
+				{code:'BE', value: 502.7},
+				{code:'AU', value: 502.3},
+				{code:'VN', value: 502.3}
+],
+		color: 'green'
+    }, {
+        name: '450-500',
+        data: [
+			{code:'GB', value: 499.7},
+			{code:'PT', value: 497},
+			{code:'FR', value: 495.7},
+			{code:'SE', value: 495.7},
+			{code:'AT', value: 492.3},
+			{code:'RU', value: 492},
+			{code:'ES', value: 491.7},
+			{code:'CZ', value: 490.7},
+			{code:'US', value: 487.7},
+			{code:'LV', value: 486.7},
+			{code:'IT', value: 485.3},
+			{code:'LU', value: 483.3},
+			{code:'IS', value: 481},
+			{code:'HR', value: 475.3},
+			{code:'LT', value: 475},
+			{code:'HU', value: 474.7},
+			{code:'IL', value: 472},
+			{code:'AR', value: 468.7},
+			{code:'MT', value: 463.7},
+			{code:'SK', value: 463},
+			{code:'GR', value: 458.7}
+		],
+		color: 'yellow'
+    }, {
+        name: 'Below 500',
+        data: [
+			{code:'CL', value: 443},
+			{code:'BG', value: 439.7},
+			{code:'CY', value: 437.7},
+			{code:'RO', value: 437.7},
+			{code:'AE', value: 432.7},
+			{code:'UY', value: 430},
+			{code:'TR', value: 424.3},
+			{code:'TT', value: 423},
+			{code:'MD', value: 421.3},
+			{code:'ME', value: 418.7},
+			{code:'CR', value: 415.7},
+			{code:'AL', value: 415},
+			{code:'TH', value: 415},
+			{code:'MX', value: 411.7},
+			{code:'CO', value: 410.3},
+			{code:'QA', value: 407.3},
+			{code:'GE', value: 405.3},
+			{code:'JO', value: 399},
+			{code:'ID', value: 395.3},
+			{code:'BR', value: 395},
+			{code:'PE', value: 394},
+			{code:'LB', value: 376.3},
+			{code:'TN', value: 371.3},
+			{code:'MK', value: 369},
+			{code:'DZ', value: 362},
+			{code:'KV', value: 355.7},
+			{code:'DO', value: 339.3}
+		],
+		color: 'red'
+    }, {
+        name: 'Was not scored',
+        data: [{code:'AD', value: null},
+					{code:'AF', value: null},
+					{code:'AG', value: null},
+					{code:'AI', value: null},
+					{code:'AM', value: null},
+					{code:'AO', value: null},
+					{code:'AQ', value: null},
+					{code:'AS', value: null},
+					{code:'AW', value: null},
+					{code:'AX', value: null},
+					{code:'AZ', value: null},
+					{code:'BA', value: null},
+					{code:'BB', value: null},
+					{code:'BD', value: null},
+					{code:'BF', value: null},
+					{code:'BH', value: null},
+					{code:'BI', value: null},
+					{code:'BJ', value: null},
+					{code:'BL', value: null},
+					{code:'BM', value: null},
+					{code:'BN', value: null},
+					{code:'BO', value: null},
+					{code:'BQ', value: null},
+					{code:'BS', value: null},
+					{code:'BT', value: null},
+					{code:'BV', value: null},
+					{code:'BW', value: null},
+					{code:'BY', value: null},
+					{code:'BZ', value: null},
+					{code:'CC', value: null},
+					{code:'CD', value: null},
+					{code:'CF', value: null},
+					{code:'CG', value: null},
+					{code:'CI', value: null},
+					{code:'CK', value: null},
+					{code:'CM', value: null},
+					{code:'CU', value: null},
+					{code:'CV', value: null},
+					{code:'CW', value: null},
+					{code:'CX', value: null},
+					{code:'DJ', value: null},
+					{code:'DM', value: null},
+					{code:'EC', value: null},
+					{code:'EG', value: null},
+					{code:'EH', value: null},
+					{code:'ER', value: null},
+					{code:'ET', value: null},
+					{code:'FJ', value: null},
+					{code:'FK', value: null},
+					{code:'FM', value: null},
+					{code:'FO', value: null},
+					{code:'GA', value: null},
+					{code:'GD', value: null},
+					{code:'GF', value: null},
+					{code:'GG', value: null},
+					{code:'GH', value: null},
+					{code:'GI', value: null},
+					{code:'GL', value: null},
+					{code:'GM', value: null},
+					{code:'GN', value: null},
+					{code:'GP', value: null},
+					{code:'GQ', value: null},
+					{code:'GS', value: null},
+					{code:'GT', value: null},
+					{code:'GU', value: null},
+					{code:'GW', value: null},
+					{code:'GY', value: null},
+					{code:'HM', value: null},
+					{code:'HN', value: null},
+					{code:'HT', value: null},
+					{code:'IM', value: null},
+					{code:'IN', value: null},
+					{code:'IO', value: null},
+					{code:'IQ', value: null},
+					{code:'IR', value: null},
+					{code:'JE', value: null},
+					{code:'JM', value: null},
+					{code:'KE', value: null},
+					{code:'KG', value: null},
+					{code:'KH', value: null},
+					{code:'KI', value: null},
+					{code:'KM', value: null},
+					{code:'KN', value: null},
+					{code:'KP', value: null},
+					{code:'KW', value: null},
+					{code:'KY', value: null},
+					{code:'KZ', value: null},
+					{code:'LA', value: null},
+					{code:'LC', value: null},
+					{code:'LI', value: null},
+					{code:'LK', value: null},
+					{code:'LR', value: null},
+					{code:'LS', value: null},
+					{code:'LY', value: null},
+					{code:'MA', value: null},
+					{code:'MC', value: null},
+					{code:'MF', value: null},
+					{code:'MG', value: null},
+					{code:'MH', value: null},
+					{code:'ML', value: null},
+					{code:'MM', value: null},
+					{code:'MN', value: null},
+					{code:'MP', value: null},
+					{code:'MQ', value: null},
+					{code:'MR', value: null},
+					{code:'MS', value: null},
+					{code:'MU', value: null},
+					{code:'MV', value: null},
+					{code:'MW', value: null},
+					{code:'MY', value: null},
+					{code:'MZ', value: null},
+					{code:'NA', value: null},
+					{code:'NC', value: null},
+					{code:'NE', value: null},
+					{code:'NF', value: null},
+					{code:'NG', value: null},
+					{code:'NI', value: null},
+					{code:'NP', value: null},
+					{code:'NR', value: null},
+					{code:'NU', value: null},
+					{code:'OM', value: null},
+					{code:'PA', value: null},
+					{code:'PF', value: null},
+					{code:'PG', value: null},
+					{code:'PH', value: null},
+					{code:'PK', value: null},
+					{code:'PM', value: null},
+					{code:'PN', value: null},
+					{code:'PR', value: null},
+					{code:'PS', value: null},
+					{code:'PW', value: null},
+					{code:'PY', value: null},
+					{code:'RE', value: null},
+					{code:'RS', value: null},
+					{code:'RW', value: null},
+					{code:'SA', value: null},
+					{code:'SB', value: null},
+					{code:'SC', value: null},
+					{code:'SD', value: null},
+					{code:'SH', value: null},
+					{code:'SJ', value: null},
+					{code:'SL', value: null},
+					{code:'SM', value: null},
+					{code:'SN', value: null},
+					{code:'SO', value: null},
+					{code:'SR', value: null},
+					{code:'SS', value: null},
+					{code:'ST', value: null},
+					{code:'SV', value: null},
+					{code:'SX', value: null},
+					{code:'SY', value: null},
+					{code:'SZ', value: null},
+					{code:'TC', value: null},
+					{code:'TD', value: null},
+					{code:'TF', value: null},
+					{code:'TG', value: null},
+					{code:'TJ', value: null},
+					{code:'TK', value: null},
+					{code:'TL', value: null},
+					{code:'TM', value: null},
+					{code:'TO', value: null},
+					{code:'TV', value: null},
+					{code:'TZ', value: null},
+					{code:'UA', value: null},
+					{code:'UG', value: null},
+					{code:'UM', value: null},
+					{code:'UZ', value: null},
+					{code:'VA', value: null},
+					{code:'VC', value: null},
+					{code:'VE', value: null},
+					{code:'VG', value: null},
+					{code:'VI', value: null},
+					{code:'VU', value: null},
+					{code:'WF', value: null},
+					{code:'WS', value: null},
+					{code:'YE', value: null},
+					{code:'YT', value: null},
+					{code:'ZA', value: null},
+					{code:'ZM', value: null},
+					{code:'ZW', value: null}
+],
+		color: 'lightgrey',
+		dataLabels: {
+			enabled: false
+		}
+    }]
+});
+
+
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
