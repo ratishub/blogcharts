@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Anti-western discourse dashboard: Tracking what the far-right is talking about on Georgian language Facebook</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar',
+		zoomType: 'xy'
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: true
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>Sentiments<br /> ',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        categories: ["14/72", "Alpha Dominullnt", "Antiliberal Channel 2", "Beqa Vardosanidze • ბექა ვარდოსანიძე", "Damocles / დამოკლესი", "euronews.ge", "Geo Pepe", "iNews • აინიუსი", "Iveron", "The Kartvelians Sarcastic Memes Empire", "Welcome to Georgia", "აბორტი ბავშვების მკვლელობაა", "ალტ-ინფო", "ანტი-ლიბერალური გვერდი", "ანტი-პარადოქსი", "ანტილიბერალური კლუბი", "ახალგაზრდა პატრიოტები", "ბავშვთა უფლებების დაცვის საზოგადოება", "ბახტრიონი 1659", "გასტროლიორი", "გრიშა ონიანი", "დადუმებული ქართველობა", "დედაქალაქი", "ევროპის დაცემა", "ეროვნება • nulltionulllity", "ეროვნება-ქართველი", "ეროვნულ რელიგიური ინსტიტუტი", "ეროვნულ სოციალისტური მოძრაობა ,საქართველოს ეროვნული ერთობა''", "ეროვნული გამოღვიძება", "ეროვნული იდეა", "ეროვნული ლეგიონი", "ეროვნული ძალა", "ზვიად ტომარაძე", "ზნეობა", "თოქ-შოუ ფალავანდიშვილთან", "თურქული ოკუპაცია", "იაზროვნე", "იბერიული ერთობა", "კაი გვერდი", "კარდჰუ", "კონსტანტინე მორგოშია", "ლადო სადღობელაშვილი", "ლიბერალიზმი? შენ მეისპე", "მამული, ენა, სარწმუნოება", "მედია-კავშირი ობიექტივი", "მეოცნებე", "მეხუთე კოლონა", "მსოფლიო საოჯახო კონგრესი", "ნაციონალისტური გამოღვიძება", "ნაციონალისტური საქართველო", "ნუ გამოლიბერალდები, იაზროვნე", "საინფორმაციო გვერდი / Information Page", "სატირა - ეიდოსი", "საქართველოს ეროვნულ-კონსერვატორები ", "საქართველოს სულიერი მისსია", "ტაძრიელი", "ქართველები საქართველოსთვის", "ქართველთა მიმების იმპერია", "ქართველი „ლიბერალი\"", "ქართველი მეამბოხე", "ქართული აზრი", "ქართული ანტი-ანტიფა", "ქართული იდეა", "ქართული მარში", "ქართული ნაციონალისტური ლეგიონი", "ქართული ძალა", "ქართული ძალა / Georgian Power", "წითელი აბი - აღდგენილი", "წინააღმდეგობა / Resistance", "წიწაკა TV - Pepper TV"]
+//		labels: {
+//            rotation: -90
+//        }
+	}],
+	
+    yAxis: {
+        // min: 0,
+        // max: 100,
+		tickInterval: 1000,
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: false
+    },
+    plotOptions: {
+        series: {
+            stacking: true,
+			dataLabels: {
+							enabled: false,
+						style: {
+							color: 'black',
+							fontWeight: 'bold',
+							textOutline: false
+					   }
+					}
+        }
+    },
+    series: [{
+		showInLegend: true,
+		name: "Russia",
+        data: [null,-99,null,-109,null,-12,3,-170,-567,0,35,null,-31,0,-581,-189,-8,-133,null,5,48,26,-185,20,-202,-304,null,-433,-1126,21,-1041,-345,null,1059,null,-571,-404,-806,-17,-1550,14,-20,-16,-135,-65,9,-94,-6,-103,-587,32,-18,-5,-968,-725,75,-40,null,-28,-12,null,null,707,12,12,-314,-241,-39,46,-356],
+		color: '#d95f02'
+    },{
+		showInLegend: true,
+		name: "West",
+        data: [null,-64,-2,-336,4,36,-193,-17,215,3,-19,-9,-323,8,-8,-231,4,-191,null,3,-6,-79,165,-101,-165,-100,null,-81,43,99,-211,172,null,232,-78,-19,-551,330,-210,-688,75,38,-160,-57,11,10,16,-65,55,-70,12,153,-4,55,820,-121,162,null,-33,null,null,-60,-1811,-158,15,-201,126,158,-28,24],
+		color: '#1b9e77'
+    },{
+		showInLegend: true,
+		name: "Other",
+        data: [-20,-572,-2,-1556,-24,-653,-750,-1229,27,-99,1552,-2066,-3015,-776,-996,-3250,-8,-1011,162,-396,90,-217,230,-254,-611,-197,884,-508,-972,-186,-891,642,4,324,-556,-73,-1496,-117,-466,-2146,799,-291,-284,-95,891,-109,-35,80,-650,-310,-286,-1081,-236,-1002,-765,-1632,-433,2,-228,-283,-6666,-82,-2346,-2140,-106,-208,-1330,45,-378,389],
+		color: '#7570b3'
+    }]
+
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
