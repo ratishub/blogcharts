@@ -16,11 +16,14 @@
 </head>
 
 <body>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/data.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
 <script src="js/grouped-categories.js"></script>
 <div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
 
  <style type="text/css">
 @font-face {
@@ -38,16 +41,12 @@
 <script type='text/javascript'>//<![CDATA[
 
 Highcharts.chart('container', {
-/    chart: {
-/        type: 'area',
-/		zoomType: 'xy'
-/    },
-    data: {
-       csvURL: 'https://crrcgeorgia.github.io/blogcharts/awdb-launch/en/data/activity.csv'
+    chart: {
+        type: 'bar',
+		zoomType: 'xy'
     },
-	credits: {
-			enabled: false
-		},
+	credits: {enabled: false
+	},
 	responsive: {
 	  rules: [{
 		condition: {
@@ -63,7 +62,7 @@ Highcharts.chart('container', {
 
 
     title: {
-        text: '<b>Number of Posts<br /> ',
+        text: '<b>Important words<br /> ',
 		style:{
 		fontFamily: "BPG_upper"
 		}
@@ -76,44 +75,21 @@ Highcharts.chart('container', {
 			  }]
 	},
 	
-    xAxis: {
-        tickInterval: 7 * 24 * 3600 * 1000, // one week
-        tickWidth: 0,
-        gridLineWidth: 1,
-        labels: {
-            align: 'left',
-            x: 3,
-            y: -3
+    xAxis: [{
+        categories: ["დასკვნით·ი", "მავნებლურ·ი", "ცვლილებ[ა]", "სვანაძ[ე]", "პროექტ·ი", "წუთ·ი", "ჩა·რიცხვ[ა]/რიცხ", "მთავ[ა]რ·ი", "გადა·ღებ[ა]/ღ", "პარლამენტ·ი", "ობიექტივ·ი", "ანონს·ი", "თანხ[ა]", "მო·მხმარებ[ე]ლ·ი/ხმარი", "მორგო"]
+//		labels: {
+//            rotation: -90
+//        }
+	}],
+	
+    yAxis: {
+        // min: 0,
+        // max: 100,
+		tickInterval: 0.1,
+        title: {
+            text: ''
         }
     },
-
-    yAxis: [{ // left y axis
-        title: {
-            text: null
-        },
-        labels: {
-            align: 'left',
-            x: 3,
-            y: 16,
-            format: '{value:.,0f}'
-        },
-        showFirstLabel: false
-    }, { // right y axis
-        linkedTo: 0,
-        gridLineWidth: 0,
-        opposite: true,
-        title: {
-            text: null
-        },
-        labels: {
-            align: 'right',
-            x: -3,
-            y: 16,
-            format: '{value:.,0f}'
-        },
-        showFirstLabel: false
-    }],
-
     legend: {
         //align: 'center',
         //verticalAlign: 'top',
@@ -124,7 +100,7 @@ Highcharts.chart('container', {
         series: {
             stacking: true,
 			dataLabels: {
-							enabled: false,
+						enabled: false,
 						style: {
 							color: 'black',
 							fontWeight: 'bold',
@@ -134,12 +110,9 @@ Highcharts.chart('container', {
         }
     },
     series: [{
-        lineWidth: 1
-    }, {
-        type: 'areaspline',
-        color: '#c4392d',
-        negativeColor: '#5679c4',
-        fillOpacity: 0.5
+		showInLegend: false,
+		name: "Russia",
+        data: [0.420911979, 0.37022884, 0.148676777, 0.128448491, 0.091029813, 0.078306976, 0.070690584, 0.054599646, 0.05046959, 0.049610171, 0.043080259, 0.042960231, 0.031390606, 0.031380232, 0.030830282]
     }]
 
 
@@ -147,7 +120,7 @@ Highcharts.chart('container', {
 
 </script>
 
-<script>
+  <script>
   // tell the embed parent frame the height of the content
   // if (window.parent && window.parent.parent){
       // window.parent.parent.postMessage(["resultsFrame", {
