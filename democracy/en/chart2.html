@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Who does not like democracy in Georgia</title>
+
+  
+</head>
+
+<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="http://blacklabel.github.io/grouped_categories/grouped-categories.js"></script>
+
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+ 
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+	credits: {enabled: false
+	},
+    title: {
+        text: '<b>Predicted probability of reporting that democracy<br><b>is the most suitable system for Georgia By Wealth Index',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(NDI/CRRC-Georgia, December 2018)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },    
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+
+    xAxis: [{
+        categories: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    }],
+    yAxis: {
+        min: 0,
+		max: 100,
+		title: null
+		},
+	
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: true
+        }
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: true
+    },
+    series: [{
+		showInLegend: false,
+		name: 'Often or always fast',
+		color:  '#9bbb59',
+        data: [41, 44, 46, 48, 50, 52, 55, 57, 59, 61, 63]
+    }]
+
+});
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
