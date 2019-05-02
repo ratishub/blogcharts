@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Despite pessimism in population’s outlook for country, further analysis gives room for optimism</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+        <div class="centerTest">
+            <span style="width: 100%;text-align: center">Assessments of issues as related to the country's direction</br> By Never vote for ...</span> </br><span style="width: 100%;text-align: center; font-size: 12px;">(NDI/CRRC-Georgia, December 2018)</span>
+        </div>
+
+<div id="container1" style="min-width:300px;
+    height:250px;
+    margin-right:10px;
+    float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container2" style="min-width:300px;
+    height:250px;
+    margin-right:10px;
+	float:left;"></div>
+<div id="legend" style="position:absolute; left:-600px; top:300px;" ></div>
+
+<style type="text/css">
+
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+.centerTest {
+    width:90%;
+    text-align:center;
+	font-family: "BPG_lower";
+}
+#legend {
+    width:120%;
+    text-align:center;
+	font-family: "BPG_lower";
+	font-size: 10px;
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container1', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>Georgian Dream',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on the country's negative direction",
+		
+		categories: ["Fair elections", "Freedom of speech", "EU membership", "NATO membership", "Human rights", "Courts", "Media", "Education", "Crime", "Corruption", "Jobs", "Persions", "Territories", "Health", "Poverty", "Inflation"]
+    },
+	yAxis : {
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Effect on the country\'s negative direction",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.2887219, 0.2112251, 0.360038, 0.1803377, 0.2947253, 0.1758081, 0.2606162, 0.197858, 0.352068, 0.2807188, 0.3321732, 0.1323185, 0.1799209, 0.1427047, 0.2409545, 0.3253213 ],
+		color: '#004d99',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[0.1582022, 0.4192415], [0.0287873, 0.393663], [0.1517686, 0.5683075], [0.0355401, 0.3251353], [0.1263929, 0.4630577], [0.0326054, 0.3190108], [0.1356757, 0.3855568], [0.0487579, 0.3469581], [0.1559763, 0.5481597], [0.1098595, 0.4515781], [0.1726438, 0.4917025], [-0.0386369, 0.303274], [0.0321335, 0.3277083], [-0.0199163, 0.3053256], [0.0889596, 0.3929493], [0.2055896, 0.4450529]],
+		color: '#004d99'
+    }]
+
+
+});
+
+Highcharts.chart('container2', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>United National Movement',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on the country's negative direction",
+		
+		categories: ["Fair elections", "Freedom of speech", "EU membership", "NATO membership", "Human rights", "Courts", "Media", "Education", "Crime", "Corruption", "Jobs", "Persions", "Territories", "Health", "Poverty", "Inflation"]
+    },
+	yAxis : {
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Effect on the country\'s negative direction",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.1937473, 0.2296054, 0.0465576, 0.2795968, 0.1758181, 0.2375832, 0.2986218, 0.3244432, 0.2068703, 0.4455897, 0.3002938, 0.3259912, 0.3500764, 0.3097657, 0.4055175, 0.3333574],
+		color: '#800000',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[0.0797707, 0.3077239],[0.1231595, 0.3360513],[-0.0843816, 0.1774968],[0.1625718, 0.3966218],[0.0648984, 0.2867378],[0.0923337, 0.3828328],[0.1879431, 0.4093005],[0.1920969, 0.4567895],[0.0960004, 0.3177402],[0.2863284, 0.6048509],[0.1705141, 0.4300734],[0.1556501, 0.4963324],[0.157487, 0.5426657],[0.1936038, 0.4259276],[0.2135489, 0.5974861],[0.1728546, 0.4938603]],
+		color: '#800000'
+    }]
+
+
+});
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+

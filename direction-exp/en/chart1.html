@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Despite pessimism in population’s outlook for country, further analysis gives room for optimism</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	credits: {
+		enabled: true,
+		text: "NDI/CRRC-Georgia, December 2018"
+	},
+    title: {
+        text: '<b>Negative assessments of issues are related<br><b>to the country\'s negative direction<br /> ',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: 'Marginal effects of logit estimates, 95% CIs',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: {
+		title: null,
+		
+		categories: ["Inflation", "Poverty", "Health", "Territories", "Persions", "Jobs", "Corruption", "Crime", "Education", "Media", "Courts", "Human rights", "NATO membership", "EU membership", "Freedom of speech", "Fair elections"]
+    },
+    xAxis: {
+		title: null
+	},
+    legend: {
+        layout: 'vertical',
+        align: 'left',
+        verticalAlign: 'top',
+        x: 100,
+        y: 70,
+        floating: true,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+        borderWidth: 1
+    },
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: null,
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.3126156, 0.2919739, 0.2895728, 0.2719864, 0.2687884, 0.2663077, 0.2558151, 0.2461525, 0.2279126, 0.2143049, 0.2105778, 0.202744, 0.1959774, 0.1919809, 0.1849966, 0.0935532],
+		color: '#004d99',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}">Probability</span>: <b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[0.2513513, 0.3738798], [0.2186991, 0.3652487], [0.2094055, 0.36974], [0.1997911, 0.3441817], [0.2096559, 0.327921], [0.2058166, 0.3267989], [0.1825879, 0.3290423], [0.1926128, 0.2996922], [0.17549, 0.2803353], [0.1587375, 0.2698723], [0.1547631, 0.2663925], [0.14478, 0.2607081], [0.1431287, 0.2488261], [0.1326368, 0.251325], [0.1298743, 0.2401188], [0.0205256, 0.1665808]],
+		color: '#004d99'
+    }]
+
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
