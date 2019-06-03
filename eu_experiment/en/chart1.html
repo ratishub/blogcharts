@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>It’s the economy stupid: An experiment on Georgian support for the European Union</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	credits: {
+		enabled: true,
+		text: "Bars show 95% confidence intervals"
+	},
+    title: {
+        text: '<b>Would you vote for the EU membership on a referendum held tomorrow?<br /> ',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: 'By Vignettes describing potential costs and benefits',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: {
+	
+		categories: [ "EU economic loss + Russia military threat", "EU economic benefit + Russia military threat",  "EU economic loss","EU economic benefit","Control"]
+    },
+	    yAxis: {
+        min: 0,
+        max: 1,
+        startOnTick: false,
+        endOnTick: false
+    },
+
+    plotOptions: {
+        line: {
+            marker: {
+				enabled: false
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Ambivalent",
+		type: 'errorbar',
+		        pointPadding: 0.3,
+        pointPlacement: -0.2,
+        data: [[0.1607255, 0.2250613],
+[0.1823047, 0.248575],
+[0.1629255, 0.2286089],
+[0.1442206, 0.2093323],
+[0.1799027, 0.2451844]
+],
+		color: '#4daf4a'
+    },
+	{
+	showInLegend: false,
+    type: 'line',
+    name: null,
+    xAxis:0,
+    data: [0.2125436, 0.2125436, 0.2125436, 0.2125436, 0.2125436],
+	color: '#4daf4a',
+	        pointPadding: 0.3,
+        pointPlacement: -0.2
+  },
+	{
+		name: "Oppose",
+		type: 'errorbar',
+        data: [[0.1547619, 0.2141044],
+[0.1022911, 0.163418],
+[0.1725291, 0.2331146],
+[0.1138184, 0.1738766],
+[0.116234, 0.1764489]
+],
+		color: '#e41a1c'
+    },
+		{
+		showInLegend: false,
+    type: 'line',
+    name: null,
+    xAxis:0,
+    data: [0.1463415, 0.1463415, 0.1463415, 0.1463415, 0.1463415],
+	color: '#e41a1c'
+  },
+	{
+		name: "Support",
+		type: 'errorbar',
+        data: [[0.5838972, 0.6614497],
+[0.6117634, 0.6916478],
+[0.5547679, 0.6339447],
+[0.636666, 0.7151537],
+[0.5930579, 0.6717505]
+],
+		color: '#377eb8'
+    },
+		{
+		showInLegend: false,
+    type: 'line',
+    name: null,
+    xAxis:0,
+    data: [0.6324042, 0.6324042, 0.6324042, 0.6324042, 0.6324042],
+	color: '#377eb8'
+  }]
+
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
