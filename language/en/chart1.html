@@ -88,7 +88,7 @@ Highcharts.chart('container', {
 	}],
 	
     yAxis: {
-		reversed: true,
+		reversed: false,
         min: 0,
         max: 100,
 		tickInterval: 20,
@@ -100,7 +100,7 @@ Highcharts.chart('container', {
         //align: 'center',
         //verticalAlign: 'top',
         //floating: true,
-		reversed: false
+		reversed: true
     },
     plotOptions: {
         series: {
@@ -116,6 +116,16 @@ Highcharts.chart('container', {
         }
     },
     series: [{
+		showInLegend: true,
+		name: 'RA',
+        data: [2, null, null],
+		color: '#444444'
+    },{
+		showInLegend: true,
+		name: 'DK',
+        data: [5, 10, 8],
+		color: '#999999'
+    },{
 		showInLegend: true,
 		name: 'Very badly',
         data: [15, 5, 8],
@@ -135,16 +145,6 @@ Highcharts.chart('container', {
 		name: 'Very well',
         data: [2, 5, 1],
 		color: '#41ab5d'
-    },{
-		showInLegend: true,
-		name: 'DK',
-        data: [5, 10, 8],
-		color: '#999999'
-    },{
-		showInLegend: true,
-		name: 'RA',
-        data: [2, null, null],
-		color: '#444444'
     }]
 
 
