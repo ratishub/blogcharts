@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Attitudes toward politicians are related to evaluations of institutional performance</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	credits: {
+		enabled: true,
+		text: "NDI/CRRC-Georgia, April 2019"
+	},
+    title: {
+        text: '<b>Attitudes towards politicians<br /> ',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: 'Marginal effects of linear estimates, 95% CIs',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: {
+		title: null,
+		
+		categories: ["Attitude towards government", "GD", "UNM", "Other", "Other urban", "Rural", "Male", "Age", "Non-Georgian", "Will vote in the parliamentary elections", "Internet", "Other", "Vocational", "Higher", "Employed", "Asset ownership index"]
+    },
+	yAxis : {
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    legend: {
+        layout: 'vertical',
+        align: 'left',
+        verticalAlign: 'bottom',
+        x: 100,
+        y: 70,
+        floating: true,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+        borderWidth: 1
+    },
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Government",
+		showInLegend: true,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.5000512,0.3131773,-0.0737304,0.1007358,0.1882647,0.3451287,0.0409125,-0.006371,0.287319,0.0460361,0.0219873,-0.0156645,-0.0660844,-0.058796,-0.0249994,0.0070412],
+		color: '#004d99',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}">Marginal effect</span>: <b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[0.4342334, 0.5658689],[0.2201556, 0.406199],[-0.1596629, 0.0122022],[0.0173065, 0.1841651],[0.0948815, 0.281648],[0.2245202, 0.4657372],[-0.0192999, 0.1011249],[-0.0083762, -0.0043659],[0.1469771, 0.4276608],[-0.0296251, 0.1216972],[-0.0813369, 0.1253114],[-0.1559671, 0.1246382],[-0.144526, 0.0123572],[-0.1330786, 0.0154866],[-0.0894227, 0.039424],[-0.0076123, 0.0216947]],
+		color: '#004d99'
+    },{
+		name: "Opposition",
+		showInLegend: true,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.259775,0.6153712,-0.2036071,0.0947097,0.2356578,0.4493994,0.0328517,-0.0059753,0.1348986,0.0412172,0.0013561,-0.0308613,-0.0283798,0.0012781,-0.0383479,0.0149534],
+		color: 'maroon',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}">Marginal effect</span>: <b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[0.1748459, 0.3447041],[0.5197714, 0.710971],[-0.2933156, -0.1138986],[0.0013379, 0.1880816],[0.1358217, 0.3354938],[0.3318636, 0.5669353],[-0.0314762, 0.0971795],[-0.008036, -0.0039145],[-0.0138925, 0.2836897],[-0.0403082, 0.1227426],[-0.1184806, 0.1211928],[-0.1828859, 0.1211632],[-0.1189162, 0.0621566],[-0.0856148, 0.088171],[-0.1050514, 0.0283557],[-0.0008836, 0.0307903]],
+		color: 'maroon'
+    }]
+
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
