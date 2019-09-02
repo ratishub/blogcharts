@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Internal Displacements’ Impact on Attitudes towards Gender Relations</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="js/grouped-categories.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+        <!--div class="centerTest">
+            <span style="width: 100%;text-align: center">Assessments of issues as related to the country's direction</br> By Never vote for ...</span> </br><span style="width: 100%;text-align: center; font-size: 12px;">(NDI/CRRC-Georgia, December 2018)</span>
+        </div-->
+
+<div id="container1" style="min-width:300px;
+    height:250px;
+    margin-right:10px;
+    float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container2" style="min-width:300px;
+    height:250px;
+    margin-right:10px;
+	float:left;"></div>
+<div class="spacer"></div>
+<div id="container3" style="min-width:300px;
+    height:250px;
+    margin-right:10px;
+	float:left;"></div>
+<div id="legend" style="position:absolute; left:-600px; top:300px;" ></div>
+
+<style type="text/css">
+
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+.centerTest {
+    width:90%;
+    text-align:center;
+	font-family: "BPG_lower";
+}
+#legend {
+    width:120%;
+    text-align:center;
+	font-family: "BPG_lower";
+	font-size: 10px;
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container1', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>Men should have the final word about decisions in the home',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Men should have the final word about decisions in the home",
+		
+		categories: [{
+			name: 'Displaced',
+			categories: ['Men', 'Women']
+			},{
+			name: 'Not displaced', 
+			categories: ['Men', 'Women']
+			}]
+    },
+	yAxis : {
+	title: "Predicted probability",
+	max: 4
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Predicted probability",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [3.283240092, 2.403855525, 2.821870199, 1.942485632 ],
+		color: 'darkblue',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.key}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[3.12708616595849, 3.43939401866808], [2.26356143782888, 2.54414961209735], [2.66571627266555, 2.97802412537514], [1.80219154453594, 2.08277971880442]
+],
+		color: 'darkblue'
+    }]
+
+
+});
+
+Highcharts.chart('container2', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>If a woman earns more money than her husband, it\'s almost certain to cause problems',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Men should have the final word about decisions in the home",
+		
+		categories: [{
+			name: 'Displaced',
+			categories: ['Men', 'Women']
+			},{
+			name: 'Not displaced', 
+			categories: ['Men', 'Women']
+			}]
+    },
+	yAxis : {
+	title: "Predicted probability",
+	max: 5
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Predicted probability",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [1.257596791, 1.447325001, 1.144635085, 1.334363296 ],
+		color: 'red',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[1.11217047845147, 1.40302310282367], [1.31666897336903, 1.57798102859193], [0.999208773264407, 1.29006139763661], [1.20370726818197, 1.46501932340486] ],
+		color: 'red'
+    }]
+
+
+});
+
+Highcharts.chart('container3', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>Women should tolerate violence in order to keep her family together',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Predicted probability",
+		
+		categories: [{
+			name: 'Displaced',
+			categories: ['Men', 'Women']
+			},{
+			name: 'Not displaced', 
+			categories: ['Men', 'Women']
+			}]
+    },
+	yAxis : {
+	title: "Predicted probability",
+	max: 5
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Predicted probability",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [1.408821194, 1.31620212, 1.257063271, 1.164444197 ],
+		color: 'green',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+        data: [[1.29881921217401, 1.51882317535343], [1.21737253549239, 1.41503170360093], [1.147061289611, 1.36706525279042], [1.06561461292938, 1.26327378103792] ],
+		type: 'errorbar',
+		color: 'green'
+    }]
+
+
+});
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
