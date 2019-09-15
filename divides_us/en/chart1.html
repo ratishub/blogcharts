@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Perceptions of what divides Georgia</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: true
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>Do the following divide or unite us as a society? (%)<br /> ',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC/NDI Survey, April 2019)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        categories: ["Politicians", "Russia", "Current economic system", "Georgian Media", "Country's leaders", "NGOs", "Law enforcement", "NATO", "EU", "Educational institutions", "Religion"]
+//		labels: {
+//            rotation: -90
+//        }
+	}],
+	
+    yAxis: {
+		reversed: false,
+        min: 0,
+        max: 100,
+		tickInterval: 20,
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: true,
+			dataLabels: {
+							enabled: true,
+						style: {
+							color: 'black',
+							fontWeight: 'bold',
+							textOutline: false
+					   }
+					}
+        }
+    },
+    series: [{
+		showInLegend: true,
+		name: 'RA',
+        data: [null, 1, 1, null, 1, 1, 1, 1, 1, 1, null],
+		color: '#444444'
+    },{
+		showInLegend: true,
+		name: 'DK',
+        data: [11, 17, 14, 14, 12, 28, 21, 24, 24, 20, 9],
+		color: '#999999'
+    },{
+		showInLegend: true,
+		name: 'Divides',
+        data: [81, 73, 73, 72, 68, 43, 45, 31, 30, 25, 29],
+		color: 'red'
+    },{
+		showInLegend: true,
+		name: 'Unites',
+        data: [8, 9, 12, 14, 20, 29, 33, 45, 46, 53, 62],
+		color: '#41ab5d'
+    }]
+
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
