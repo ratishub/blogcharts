@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Drugs for desert? Biggest monthly household expenses in Georgia</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: true
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>What are the biggest monthly expenses for your household? (%)<br /> ',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC/NDI Survey, July 2019)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        categories: ["Food", "Cost of utilities", "Medicine", "Loan/installment/mortgage", "Medical care", "Education costs (school, university, private tutors)", "Petrol", "Childcare (including kindergarten)", "Rent ", "Transport", "Clothing", "Household items and repairs", "Travel/holiday", "Sports/exercise", "Entertainment", "Aging adult care", "Other"]
+//		labels: {
+//            rotation: -90
+//        }
+	}],
+	
+    yAxis: {
+        min: 0,
+        max: 100,
+		tickInterval: 20,
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: false
+    },
+    plotOptions: {
+        series: {
+            stacking: true,
+			dataLabels: {
+							enabled: true,
+						style: {
+							color: 'black',
+							fontWeight: 'bold',
+							textOutline: false
+					   }
+					}
+        }
+    },
+    series: [{
+		showInLegend: false,
+		name: null,
+        data: [76, 62, 38, 30, 16, 10, 8, 8, 6, 4, 3, 1, 1, 0, 0, 0, 1]
+		// color: '#c3d69b'
+    }]
+
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
