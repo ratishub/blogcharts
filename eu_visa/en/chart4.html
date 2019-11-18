@@ -47,7 +47,7 @@ Highcharts.chart('container', {
 	credits: {enabled: false
 	},
     title: {
-        text: '<b>Knowledge of rules around visa-free requirements<br><b> By year and ethniciy (average score)',
+        text: '<b>Change in correct responses 2017-2019 <br><b>By ethnicity (difference in frequency)',
 		style:{
 		fontFamily: "BPG_upper"
 		}
@@ -68,16 +68,20 @@ Highcharts.chart('container', {
 
     xAxis: [{
         categories: [{
-			name: 'Ethnic Georgian',
-			categories: ['2017', '2019']
+			name: 'Documents',
+			categories: ['Address', 'Biometric\npassport', 'Proof of financial\nmeans',
+			'Return ticket']
 			},{
-			name: 'Ethnic minority', 
-			categories: ['2017', '2019']
+			name: null, 
+			categories: ['Duration of stay']
+			},{
+			name: null, 
+			categories: ['Work permint']
 			}]
 			}],
     yAxis: {
-        min: 0,
-		max: 3,
+        min: -25,
+		max: 15,
 		title: null
 		},
 	
@@ -97,9 +101,13 @@ Highcharts.chart('container', {
 		reversed: true
     },
     series: [{ 
-		name: null,
+		name: "Ethnic Georgian",
 		color:  '#2b83ba',
-        data: [2.73, 2.25, 1.34, 1.50]
+        data: [-9.192363845, -1.632874954, -13.714803, -5.945023486, 1.584844268, -18.77946548 ]
+    },{ 
+		name: "Ethnic Minority",
+		color:  '#fdae61',
+        data: [2.761487766, 8.483916553, -7.88534985, 8.887830854, 5.53244616, -0.867645659 ]
     }]
 
 });

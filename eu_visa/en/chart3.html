@@ -47,7 +47,7 @@ Highcharts.chart('container', {
 	credits: {enabled: false
 	},
     title: {
-        text: '<b>Change in correct responses 2017-2019 <br><b>By ethnicity (difference in frequency)',
+        text: '<b>Knowledge of rules around visa-free requirements, <br><b>By ethnicity (% correct, 2019)',
 		style:{
 		fontFamily: "BPG_upper"
 		}
@@ -80,8 +80,8 @@ Highcharts.chart('container', {
 			}]
 			}],
     yAxis: {
-        min: -25,
-		max: 15,
+        min: 0,
+		max: 100,
 		title: null
 		},
 	
@@ -103,11 +103,11 @@ Highcharts.chart('container', {
     series: [{ 
 		name: "Ethnic Georgian",
 		color:  '#2b83ba',
-        data: [-9.192363845, -1.632874954, -13.714803, -5.945023486, 1.584844268, -18.77946548 ]
+        data: [81, 37, 27, 34, 5, 44]
     },{ 
 		name: "Ethnic Minority",
 		color:  '#fdae61',
-        data: [2.761487766, 8.483916553, -7.88534985, 8.887830854, 5.53244616, -0.867645659 ]
+        data: [56, 31, 21, 20, 7, 27]
     }]
 
 });
