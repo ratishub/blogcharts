@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Attitudes towards the new banking regulations</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        zoomType: 'xy',
+		inverted: false
+    },
+	credits: {
+		enabled: true,
+		text: "NDI/CRRC-Georgia, July 2019"
+	},
+    title: {
+        text: '<b>Support of banking regulations<br /> ',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: 'Marginal effects on probability, 95% CIs',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: {
+		title: null,
+		
+		categories: ["Have a loan", " ", "35-54", "55+", " ", "Other urban", "Rural", " ", "Vocational/<br>technical<br>degree", "Higher than<br>secondary", " ", "Wealth index", " ", "UNM", "Liberal parties", "Other parties", "No party", " ", "Employed"]
+    },
+	yAxis : {
+	title: "Effect on the attitudes towards government",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    legend: {
+        layout: 'vertical',
+        align: 'left',
+        verticalAlign: 'bottom',
+        x: 100,
+        y: 70,
+        floating: true,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+        borderWidth: 1
+    },
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Neutral",
+		showInLegend: true,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.0365214, null, -0.0040887, 0.0048188, null, -0.0008554, -0.0489905, null, -0.0017241, 0.0354136, null, 0.0176394, null, -0.181702, -0.234527, -0.0672106, -0.1458493, null, 0.0350918],
+		color: 'darkblue',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}">Predicted probability</span>: <b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[-0.030836, 0.1038787],[null, null],[-0.0861503, 0.0779728],[-0.0790097, 0.0886473],[null, null],[-0.097545, 0.0958343],[-0.1603902, 0.0624092],[null, null],[-0.0832899, 0.0798418],[-0.051808, 0.1226351],[null, null],[-0.0000375, 0.0353163],[null, null],[-0.3261226, -0.0372814],[-0.3765267, -0.0925273],[-0.2002525, 0.0658313],[-0.2425851, -0.0491135],[null, null],[-0.0453569, 0.1155405]],
+		color: 'darkblue'
+    }]
+
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
