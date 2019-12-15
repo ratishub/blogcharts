@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Perceptions of healthcare quality in Georgia</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="js/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        zoomType: 'xy',
+		inverted: false
+    },
+	credits: {
+		enabled: true,
+		text: "NDI/CRRC-Georgia, July 2019"
+	},
+    title: {
+        text: '<b>Satisfaction with the quality of treatment<br /> ',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: 'Marginal effects on probability, 95% CIs',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: {
+		title: null,
+		
+		categories: ["Vocational/technical<br>degree", "Higher than secondary", "Wealth index", "No child in<br>the household", "Do not trust diagnoses<br>that doctoris give<br>in Georgia", "Felt like doctor<br>prescribed medicine<br>for own personal<br>financial gain", "Positive assesment of the<br>Universal Healthcare<br>System", "Minority PSUs", "Would prefer<br>complicated surgey or<br>treatment done<br>in Georgia", "35-54", "55+"]
+    },
+	yAxis : {
+	title: "Effect on satisfaction with quality of healthcare",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    legend: {
+        layout: 'vertical',
+        align: 'left',
+        verticalAlign: 'bottom',
+        x: 100,
+        y: 70,
+        floating: true,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+        borderWidth: 1
+    },
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: null,
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [-0.0363415, 0.0405898, 0.0093272, -0.0001434, -0.233988, -0.0937792, 0.3659445, 0.09703, 0.0482511, -0.1054718, -0.066975],
+		color: '#004d99',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[-0.1202951, 0.0476121], [-0.041076, 0.1222556], [-0.0063183, 0.0249728], [-0.0705826, 0.0702959], [-0.3566957, -0.1112803], [-0.1771311, -0.0104273], [0.2487426, 0.4831465], [0.0171551, 0.1769049], [-0.0158226, 0.1123247], [-0.1835927, -0.0273509], [-0.1416361, 0.0076861]],
+		color: '#004d99'
+    }]
+
+
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
