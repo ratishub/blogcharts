@@ -1,0 +1,642 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Who believes Georgia will regain its territorial integrity?</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+        <div class="centerTest">
+            <span style="width: 100%;text-align: center">Georgia will regain its territorial integrity?</br> Marginal effects on the dependent variable</span> </br><span style="width: 100%;text-align: center; font-size: 12px;">(CRRC/NDI survey, March 2018)</span>
+        </div>
+
+<div id="container1" style="min-width:250px;
+    height:300px;
+    margin-right:10px;
+    float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container2" style="min-width:250px;
+    height:300px;
+    margin-right:10px;
+	float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container3" style="min-width:250px;
+    height:300px;
+    margin-right:10px;
+	float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container4" style="min-width:250px;
+    height:300px;
+    margin-right:10px;
+	clear:left;
+	float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container5" style="min-width:250px;
+    height:300px;
+    margin-right:10px;
+	float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container6" style="min-width:250px;
+    height:300px;
+    margin-right:10px;
+	float:left;"></div>
+<div id="legend" style="position:absolute; left:-600px; top:300px;" ></div>
+
+<style type="text/css">
+
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+.centerTest {
+    width:90%;
+    text-align:center;
+	font-family: "BPG_lower";
+}
+#legend {
+    width:120%;
+    text-align:center;
+	font-family: "BPG_lower";
+	font-size: 10px;
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container1', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>Agree (model with NATO membership)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on the country's negative direction",
+		
+		categories: ["Wrong Direction", "Right Direction", "NATO Approve", "NATO Disapprove", "Defence Capabilities Worsened", "Defence Capabilities Improved", "Defence Capabilities Don't Know", "US Military Assistance Decreased", "US Military Assistance Increased", "US Military Assistance Don't Know"]
+    },
+	yAxis : {
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Effect on the country\'s negative direction",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.005317,0.1292469,0.1981256,-0.0052003,-0.0961938,0.0237511,-0.0891535,-0.1000226,0.081596,-0.0505496],
+		color: '#004d99',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[-0.0643386, 0.0749726], [0.0543474, 0.2041465], [0.1191167, 0.2771344], [-0.0864915, 0.0760909], [-0.1690772, -0.0233104], [-0.0450099, 0.092512], [-0.1711331, -0.0071738], [-0.1999472, -0.000098], [0.0058134, 0.1573786], [-0.1206809, 0.0195817]],
+		color: '#004d99'
+    }]
+
+
+});
+
+Highcharts.chart('container2', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>Disagree (model with NATO membership)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on the country's negative direction",
+		
+		categories: ["Wrong Direction", "Right Direction", "NATO Approve", "NATO Disapprove", "Defence Capabilities Worsened", "Defence Capabilities Improved", "Defence Capabilities Don't Know", "US Military Assistance Decreased", "US Military Assistance Increased", "US Military Assistance Don't Know"]
+    },
+	yAxis : {
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Effect on the country\'s negative direction",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [-0.0002922,-0.1571147,-0.0981781,0.0772571,0.0458641,-0.0073387,-0.0431456,0.0870858,-0.1399333,-0.0403093
+],
+		color: '#800000',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[-0.0695952, 0.0690109], [-0.2233144, -0.0909151], [-0.1712275, -0.0251288], [-0.0185989, 0.173113], [-0.0272994, 0.1190277], [-0.0856458, 0.0709684], [-0.1373298, 0.0510386], [-0.0168759, 0.1910475], [-0.2149841, -0.0648825], [-0.1064899, 0.0258712]
+],
+		color: '#800000'
+    }]
+
+
+});
+
+Highcharts.chart('container3', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>DK (model with NATO membership)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on the country's negative direction",
+		
+		categories: ["Wrong Direction", "Right Direction", "NATO Approve", "NATO Disapprove", "Defence Capabilities Worsened", "Defence Capabilities Improved", "Defence Capabilities Don't Know", "US Military Assistance Decreased", "US Military Assistance Increased", "US Military Assistance Don't Know"]
+    },
+	yAxis : {
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Effect on the country\'s negative direction",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [-0.0050248,0.0278678,-0.0999474,-0.0720568,0.0503297,-0.0164124,0.1322991,0.0129368,0.0583374,0.090859
+],
+		color: '#800000',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[-0.0593709, 0.0493212], [-0.0450575, 0.1007931], [-0.1800443, -0.0198506], [-0.1568535, 0.0127399], [-0.0241682, 0.1248275], [-0.0816285, 0.0488038], [0.0519529, 0.2126452], [-0.0816668, 0.1075405], [-0.0134588, 0.1301335], [0.0304048, 0.1513131]
+],
+		color: '#800000'
+    }]
+
+
+});
+Highcharts.chart('container4', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>Agree (model with EU membership)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on the country's negative direction",
+		
+		categories: ["Wrong Direction", "Right Direction", "EU Approve", "EU disapprove", "Defence Capabilities Worsened", "Defence Capabilities Improved", "Defence Capabilities Don't Know", "US Military Assistance Decreased", "US Military Assistance Increased", "US Military Assistance Don't Know"]
+    },
+	yAxis : {
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Effect on the country\'s negative direction",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.0092046,0.1304602,0.131809,0.0055512,-0.0860489,0.0289469,-0.0929687,-0.1129664,0.0856427,-0.0605205
+],
+		color: '#800000',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[-0.0632192, 0.0816285], [0.054775, 0.2061454], [0.0486484, 0.2149695], [-0.1010959, 0.1121983], [-0.1619547, -0.0101431], [-0.0418213, 0.0997151], [-0.1770676, -0.0088698], [-0.208633, -0.0172998], [0.0093218, 0.1619636], [-0.1312818, 0.0102408]
+],
+		color: '#800000'
+    }]
+
+
+});
+
+Highcharts.chart('container5', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>Disagree (model with EU membership)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on the country's negative direction",
+		
+		categories: ["Wrong Direction", "Right Direction", "EU Approve", "EU disapprove", "Defence Capabilities Worsened", "Defence Capabilities Improved", "Defence Capabilities Don't Know", "US Military Assistance Decreased", "US Military Assistance Increased", "US Military Assistance Don't Know"]
+    },
+	yAxis : {
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Effect on the country\'s negative direction",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.0039675,-0.1559303,-0.0160045,0.0882967,0.0413583,-0.0035815,-0.042066,0.0920227,-0.1456932,-0.0378411
+],
+		color: '#800000',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[-0.0693635, 0.0772984], [-0.2258789, -0.0859817], [-0.1015773, 0.0695684], [-0.0198609, 0.1964544], [-0.0315699, 0.1142865], [-0.0822699, 0.0751069], [-0.1410379, 0.0569059], [-0.0084551, 0.1925004], [-0.2213139, -0.0700724], [-0.1049459, 0.0292636]
+],
+		color: '#800000'
+    }]
+
+
+});
+
+
+Highcharts.chart('container6', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>DK (model with EU membership)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on the country's negative direction",
+		
+		categories: ["Wrong Direction", "Right Direction", "EU Approve", "EU disapprove", "Defence Capabilities Worsened", "Defence Capabilities Improved", "Defence Capabilities Don't Know", "US Military Assistance Decreased", "US Military Assistance Increased", "US Military Assistance Don't Know"]
+    },
+	yAxis : {
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Effect on the country\'s negative direction",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [-0.0131721,0.0254701,-0.1158045,-0.0938479,0.0446906,-0.0253654,0.1350347,0.0209437,0.0600505,0.0983616
+],
+		color: '#800000',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[-0.0664713, 0.0401271], [-0.0465322, 0.0974725], [-0.1974137, -0.0341953], [-0.1954954, 0.0077996], [-0.0289784, 0.1183597], [-0.0913254, 0.0405946], [0.0539498, 0.2161197], [-0.0730335, 0.1149209], [-0.0119006, 0.1320016], [0.0383383, 0.158385]
+],
+		color: '#800000'
+    }]
+
+
+});
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
