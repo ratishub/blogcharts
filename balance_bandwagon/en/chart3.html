@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Georgia’s Foreign Policy Trilemma: Balance, Bandwagon, or Hedge?</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+        <div class="centerTest">
+            <span style="width: 100%;text-align: center">Georgia's foreign policy should be...</br> Marginal effects on the dependent variable</span> </br><span style="width: 100%;text-align: center; font-size: 12px;">(CRRC/NDI survey, March 2016)</span>
+        </div>
+
+<div id="container1" style="min-width:250px;
+    height:300px;
+    margin-right:10px;
+    float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container2" style="min-width:250px;
+    height:300px;
+    margin-right:10px;
+	float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container3" style="min-width:250px;
+    height:300px;
+    margin-right:10px;
+	float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container4" style="min-width:250px;
+    height:300px;
+    margin-right:10px;
+	float:left;"></div>
+<div class="spacer"></div>
+<div id="legend" style="position:absolute; left:-600px; top:300px;" ></div>
+
+<style type="text/css">
+
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+.centerTest {
+    width:90%;
+    text-align:center;
+	font-family: "BPG_lower";
+}
+#legend {
+    width:120%;
+    text-align:center;
+	font-family: "BPG_lower";
+	font-size: 10px;
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container1', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>Agree (model with NATO membership)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Pro-Western",
+		
+		categories: ["Russia", "Secondary or lower", "Vocational/technical degree", "UNM", "No Party/Don't know", "Other party", "Wrong direction", "Right direction"]
+    },
+	yAxis : {
+	min: -0.25,
+    max: 0.25,
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Effect on the country\'s negative direction",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.2016082,-0.0118979,-0.0251653,0.0923226,0.0238918,0.001504,0.0184164,-0.0176157],
+		color: '#004d99',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[0.16106, 0.2421564], [-0.054344, 0.0305482], [-0.070567, 0.0202364], [0.0285177, 0.1561274], [-0.0257527, 0.0735364], [-0.0489426, 0.0519507], [-0.0169769, 0.0538097], [-0.0702792, 0.0350478]],
+		color: '#004d99'
+    }]
+
+
+});
+
+Highcharts.chart('container2', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>Pro-Western Hedge',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on the country's negative direction",
+		
+		categories: ["Russia", "Secondary or lower", "Vocational/technical degree", "UNM", "No Party/Don't know", "Other party", "Wrong direction", "Right direction"]
+		},
+	yAxis : {
+		min: -0.25,
+    max: 0.25,
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Effect on the country\'s negative direction",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.0851872,-0.0646887,-0.0507999,-0.086427,-0.0121233,-0.0368649,-0.0654977,0.0582429
+],
+		color: '#800000',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[0.0304693, 0.1399051], [-0.1180917, -0.0112856], [-0.1111369, 0.0095371], [-0.1715326, -0.0013214], [-0.0859027, 0.0616561], [-0.1102759, 0.036546], [-0.1197857, -0.0112096], [-0.0099346, 0.1264204]
+],
+		color: '#800000'
+    }]
+
+
+});
+
+Highcharts.chart('container3', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>Pro-Russian Hedge',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on the country's negative direction",
+		
+		categories: ["Russia", "Secondary or lower", "Vocational/technical degree", "UNM", "No Party/Don't know", "Other party", "Wrong direction", "Right direction"]
+    },
+	yAxis : {
+		min: -0.25,
+    max: 0.25,
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Effect on the country\'s negative direction",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [-0.2228628,0.0597045,0.0683742,0.0245258,-0.0188266,0.0301328,0.0080285,-0.0398109
+],
+		color: '#800000',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[-0.2669211, -0.1788045], [0.0174803, 0.1019286], [0.0250926, 0.1116559], [-0.0456019, 0.0946535], [-0.0713314, 0.0336782], [-0.0260856, 0.0863511], [-0.0325946, 0.0486516], [-0.0865829, 0.0069612]
+],
+		color: '#800000'
+    }]
+
+
+});
+Highcharts.chart('container4', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>Pro-Russian',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on the country's negative direction",
+		
+		categories: ["Russia", "Secondary or lower", "Vocational/technical degree", "UNM", "No Party/Don't know", "Other party", "Wrong direction", "Right direction"]
+    },
+	yAxis : {
+		min: -0.25,
+    max: 0.25,
+	title: "Effect on the country's negative direction",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "Effect on the country\'s negative direction",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [-0.0639326,0.0168822,0.0075909,-0.0304214,0.007058,0.0052281,0.0390528,-0.0008163
+],
+		color: '#800000',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[-0.0866221, -0.0412431], [-0.004967, 0.0387313], [-0.0204501, 0.035632], [-0.0633862, 0.0025434], [-0.0201547, 0.0342707], [-0.022414, 0.0328703], [0.0130639, 0.0650416], [-0.0247701, 0.0231374]],
+		color: '#800000'
+    }]
+
+
+});
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
