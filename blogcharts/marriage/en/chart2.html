@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Georgians aren’t very tolerant these days</title>
+
+  
+</head>
+
+<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="http://blacklabel.github.io/grouped_categories/grouped-categories.js"></script>
+
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+ 
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+	credits: {enabled: false
+	},
+    title: {
+        text: 'Net approvals of women in Georgia marrying men of ethnicities associated with Christianity and not associated with Christianty',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(Caucasus Barometer, 2011-2015)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },    
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+
+    xAxis: [{
+        categories: ["2011", "2012", "2013", "2015"]
+    }],
+    yAxis: {
+        min: -70,
+		max: 10,
+        title: {
+            text: 'Average, %'
+        },
+      plotLines: [{
+			color: 'red', // Color value
+			dashStyle: 'solid', // Style of the plot line. Default to solid
+			value: 0, // Value of where the line will appear
+			width: 2 // Width of the line    
+	}]
+
+	},
+	
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: true
+        }
+    },
+    series: [{
+        name: 'Christian',
+		color: "#e31a1c",
+		visible: true,
+        data: [-26,-26,-24,-12]
+    }, {
+        name: 'Non-Christian',
+		color: "#33a02c",
+		visible: true,
+        data: [-46,-50,-47,-35]
+    }]
+});
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+

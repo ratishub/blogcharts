@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Women significantly less likely to go out to eat in Georgia</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="http://blacklabel.github.io/grouped_categories/grouped-categories.js"></script>
+        <div class="centerTest">
+            <span style="width: 100%;text-align: center">During the last 6 months, did you go to a restaurant?</br> Effects of age and years of education by Gender</br> Predicted probabilities, 95% Confidence Intervals </span>
+        </div>
+
+<div id="container1" style="min-width:300px;
+    height:250px;
+    margin-right:10px;
+    float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container2" style="min-width:300px;
+    height:250px;
+    margin-right:10px;
+    float:left;"></div>
+
+<div class="centerLeft">
+<span style="width: 100%;text-align: left">Caucasus Barometer 2017, Georgia </span>
+</div>
+
+ <style type="text/css">
+.centerTest {
+    width:90%;
+    text-align:center;
+}
+.centerLeft {
+    width:20%;
+    text-align:left;
+	font-size: 12px;
+}
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+
+
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container1', {
+    chart: {
+        zoomType: 'xy'
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+	title: null,
+	
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+	        title: {
+            text: 'Employment status'
+        },
+			categories: ['No labor force', 'Unemployed', 'Employed']
+			}],
+	
+    yAxis: [{
+	    gridLineWidth: 0,
+        minorGridLineWidth: 0,
+        min: 0,
+        max: 1,
+		tickInterval: 0.2,
+		labels: {
+			enabled: true
+		},
+        title: {
+            text: 'Probability of going to a restaurant'
+        }
+    },
+			{
+			title: false,
+			
+			series: {
+					lineWidth: 0
+				}	
+			}],
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		enabled: true
+    },
+    plotOptions: {
+        series: {
+				dataLabels: {
+					enabled: false,
+					style: {
+						color: 'black',
+						fontWeight: 'bold',
+						textOutline: false
+				   }
+			},
+			
+        }
+    },
+    series: [
+	{ 
+		name: 'Male',
+		color:  '#3399ff',
+		type: 'line',
+        data: [0.5032638, 0.5852797, 0.6074079]
+    },{ 
+		name: 'Female',
+		color:  '#a9d18e',
+		type: 'line',
+        data: [0.3865549, 0.4684057, 0.4913578]
+    },{
+		name: 'Male',
+		color: '#3399ff',
+		type: 'errorbar',
+		data: [[0.4352442, 0.5712833],[0.5331732, 0.6373861],[0.5614612, 0.6533546]]
+	},{
+		name: 'Female',
+		color: '#a9d18e',
+		type: 'errorbar',
+		data: [[0.3335223, 0.4395875],[0.4156114, 0.5212],[0.446475, 0.5362405]]
+	}]
+});
+
+Highcharts.chart('container2', {
+    chart: {
+        zoomType: 'xy'
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+	title: null,
+	
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        title: {
+            text: 'Household spending'
+        },
+			categories: [">$400", "$251 to $400", "<$251", "DK/RA"]
+			}],
+	
+    yAxis: [{
+	    gridLineWidth: 0,
+        minorGridLineWidth: 0,
+        min: 0,
+        max: 1,
+		tickInterval: 0.2,
+		labels: {
+			enabled: false
+		},
+        title: {
+            text: ''
+        }
+    },
+			{
+			title: false,
+			
+			series: {
+					lineWidth: 0
+				}	
+			}],
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		enabled: true
+    },
+    plotOptions: {
+        series: {
+				dataLabels: {
+					enabled: false,
+					style: {
+						color: 'black',
+						fontWeight: 'bold',
+						textOutline: false
+				   }
+			},
+			
+        }
+    },
+    series: [
+	{ 
+		name: 'Male',
+		color:  '#3399ff',
+		type: 'line',
+        data: [0.6817735,0.6094782,0.5064799,0.6185424]
+    },{ 
+		name: 'Female',
+		color:  '#a9d18e',
+		type: 'line',
+        data: [0.569186,0.4903302,0.3855224,0.4999694]
+    },{
+		name: 'Male',
+		color: '#3399ff',
+		type: 'errorbar',
+		data: [[0.6068896, 0.7566573],[0.5463299, 0.6726266],[0.4536739, 0.559286],[0.5460371, 0.6910477]]
+	},{
+		name: 'Female',
+		color: '#a9d18e',
+		type: 'errorbar',
+		data: [[0.4960166, 0.6423555],[0.4288558, 0.5518045],[0.3406822, 0.4303626],[0.4245419, 0.5753968]]
+	}]
+});
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+

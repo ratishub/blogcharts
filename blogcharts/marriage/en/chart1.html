@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Georgians aren’t very tolerant these days</title>
+
+  
+</head>
+
+<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="http://blacklabel.github.io/grouped_categories/grouped-categories.js"></script>
+
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+ 
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+	credits: {enabled: false
+	},
+    title: {
+        text: 'Net approval in Georgia of women marrying men of other ethnicities. (%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(Caucasus Barometer, 2009-2015)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },    
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+
+    xAxis: [{
+        categories: ["2009", "2010", "2011", "2012", "2013", "2015"]
+    }],
+    yAxis: {
+        min: -70,
+		max: 10,
+        title: {
+            text: 'Average, %'
+        },
+      plotLines: [{
+			color: 'red', // Color value
+			dashStyle: 'solid', // Style of the plot line. Default to solid
+			value: 0, // Value of where the line will appear
+			width: 2 // Width of the line    
+	}]
+
+	},
+	
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: true
+        }
+    },
+    series: [{
+        name: 'Abkhaz',
+		color: "#fb9a99",
+		visible: false,
+        data: [-20,-26,-28,-24,-26,-10]
+    }, {
+        name: 'Armenians living in Georgia',
+		color: "#a6cee3",
+		visible: false,
+        data: [null, null, -24,-34,-22,-14]
+    }, {
+        name: 'Armenians',
+		color: "#1f78b4",
+		visible: false,
+        data: [-32,-38,-34,-42,-30,-22]
+    },{
+        name: 'Azeris living in Georgia',
+		color: "#b2df8a",
+		visible: false,
+        data: [null, null, -36,-42,-34,-24]
+    }, {
+        name: 'Azeris',
+		color: "#33a02c",
+		visible: false,
+        data: [-50,-50,-44,-46,-42,-30]
+    }, {
+        name: 'Kurds',
+		color: "#e31a1c",
+		visible: false,
+        data: [-62,-64,-58,-64,-60,-48]
+    },{
+        name: 'Ossetians',
+		color: "#fdbf6f",
+		visible: false,
+        data: [-20,-24,-32,-28,-28,-16]
+    }, {
+        name: 'Average All Ethnicities Asked About',
+		color: "#444444",
+		lineWidth: 3,
+        data: [-35,-38,-34,-37,-34,-22]
+    }, {
+        name: 'Jews',
+		color: "#cab2d6",
+		visible: false,
+        data: [-36,-44,-34,-42,-48,-30]
+    }, {
+        name: 'Russians',
+		color: "#ff7f00",
+		visible: false,
+        data: [-16,-12,-12,-2,-14,2]
+    },{
+        name: 'Turks',
+		color: "#6a3d9a",
+		visible: false,
+        data: [-62,-60,-56,-58,-52,-42]
+    }, {
+        name: 'Americans',
+		color: "#cab2d6",
+		visible: false,
+        data: [-14,-24,-20,-24,-18,-10]
+    }]
+});
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+

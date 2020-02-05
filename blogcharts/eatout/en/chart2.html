@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Women significantly less likely to go out to eat in Georgia</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	credits: {
+		enabled: false
+	},
+    title: {
+        text: '<b>During the last 6 months, did you go to a restaurant?<br/><b>Marginal effects<br/><b>95% Confidence Intervals',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC Caucasus Barometer, Georgia)',
+		style:{
+		fontFamily: "BPG_lower"
+		}
+    },
+    xAxis: [{
+		type: "category",
+        categories: ["Rural", "Other urban", "Capital", "Male", "Female", "No labor force", "Unemployed", "Employed", "Age", "Education (years)", "Perceived rung", "Spending (DK/RA)", "Spending < $250", "$251-$400", "Spending > $400"],
+        labels: {
+            style: {
+                fontFamily: "BPG_lower"
+            }
+        }
+	}],
+    yAxis: [{ // Primary yAxis
+		floor: -0.2,
+        ceiling: 0.2,
+
+		plotLines: [{
+            color: '#FF0000',
+            width: 2,
+            value: 0
+        }],
+        labels: {
+            style: {
+                fontFamily: "BPG_lower"
+            }
+        },
+		title: {
+				text: "Effects on Pr(went to a restaurant)",
+				style:{
+				fontFamily: "BPG_lower"
+				}
+			}
+			},
+			{
+			title: false,
+			
+			series: {
+					lineWidth: 0
+				}	
+			}],
+
+    tooltip: {
+        shared: true
+    },
+
+    series: [{
+        name: '95% confidence intervals',
+        type: 'errorbar',
+        color: '#045a8d',
+		lineWidth: 2,
+        yAxis: 0,
+        data: [[null, null], [-0.0086067, 0.1084933], [0.0115072, 0.1477067], [null, null], [-0.157273, -0.0682116], [null, null], [0.0208136, 0.1421172], [0.0442926, 0.163477], [-0.009675, -0.0074956], [0.0144858, 0.0311963], [0.0297954, 0.061281], [null, null], [-0.1888888, -0.035028], [-0.0952981, 0.0768056], [-0.0271402, 0.1582175]],
+        tooltip: {
+            pointFormat: 'error range: {point.low}-{point.high}<br/>',
+			style:{
+				fontFamily: "BPG_lower"
+			}
+        }
+    }, {
+		name: 'Point estimate',
+		lineWidth: 0,
+            marker: {
+                enabled: true,
+                radius: 4,
+				symbol: "diamond"
+            },
+
+		data: [0, 0.0499433, 0.0796069, 0, -0.1127423, 0, 0.0814654, 0.1038848, -0.0085853, 0.022841, 0.0455382, 0, -0.1119584, -0.0092463, 0.0655387],
+		
+		showInLegend: false,
+        color: '#045a8d',
+		states: {
+                hover: {
+                    lineWidthPlus: 0
+                }
+           },
+        tooltip: {
+			style:{
+				fontFamily: "BPG_lower"
+			}
+        }
+
+	}]
+});
+
+//]]> 
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+</body>
+
+</html>
+

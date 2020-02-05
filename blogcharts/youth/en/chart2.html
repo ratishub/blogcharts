@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>What are young people’s values and how are these different from older generations’ values in Georgia?</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="http://blacklabel.github.io/grouped_categories/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>I will briefly describe a person. Could you please tell me whether  that<br /> <b>person is very much like you, like you, somewhat like you, a little like <br /> <b>you, not like you, or not at all like you? <b>By Age(%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(World Values Survey 2014, Georgia)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        categories: [{
+			name: '<b >Self-direction<br /><b >Thinking up new ideas and being creative<br /><b >is important to him.her.<br /><b >(S)He likes to do things in his own way.', 
+			categories: ['18-25', '26-35', '36-45', '46-55', '56-65', '66+']
+			},{
+			name: '<b >Stimulation<br />(<b >S)He looks for adventures and likes to takes risks.<br /><b >(S)He wants to have an exciting life.', 
+			categories: ['18-25', '26-35', '36-45', '46-55', '56-65', '66+']
+			},{
+			name: '<b >Hedonism<br /><b >Having a good time is important to him/her.<br /><b >(S)He likes to "spoil" himself', 
+			categories: ['18-25', '26-35', '36-45', '46-55', '56-65', '66+']
+			}]
+	}],
+	
+    yAxis: {
+        min: 0,
+        max: 100,
+		tickInterval: 20,
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal',
+						dataLabels: {
+							enabled: true,
+						style: {
+							color: 'black',
+							fontWeight: 'bold',
+							textOutline: false
+					   }
+					}
+        }
+    },
+    series: [ { 
+		name: 'Not at all like me/Not like me',
+		color:  '#d95f0e',
+        data: [14,16,13,19,27,24,32,36,44,42,47,51,23,35,43,49,56,53]
+    },{ 
+		name: 'A little/Somewhat like me',
+		color:  '#99d8c9',
+        data: [27,33,45,38,35,36,28,27,31,28,28,27,42,38,35,31,29,26]
+    },{ 
+		name: 'Very much like me/Like me',
+		color:  '#4daf4a',
+        data: [59,51,42,43,38,40,40,37,26,30,25,23,35,27,22,20,14,21]
+    }]
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+

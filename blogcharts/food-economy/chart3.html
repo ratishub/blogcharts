@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>ეკონომიკური ზრდის მიუხედავად, საქართველოში შინამეურნეობების უმრავლესობას საკვების საყიდლად საკმარისი თანხა არ აქვს</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'line'
+    },
+	credits: {enabled: false
+	},
+    title: {
+        text: 'ბოლო 12 თვის შესახებ თუ ვისაუბრებთ, რამდენჯერ მოხდა ისე, რომ არ გქონდათ ფული თქვენთვის ან თქვენი ოჯახისათვის საჭირო საკვების საყიდლად? გასულ თვეს შინამეურნეობის შემოსავლის მიხედვით (%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC კავკასიის ბარომეტრი, საქართველო)',
+		style:{
+		fontFamily: "BPG_lower"
+		}
+    },
+
+	    xAxis: [{
+        title: {
+            text: '$ 0-50',
+            align: 'middle',
+            style: {
+                fontFamily: "BPG_upper"
+            }
+        },
+
+        categories: [
+				'2011',
+				'2012',
+				'2013',
+				'2015'
+        ],
+        labels: {
+            style: {
+                fontFamily: "BPG_lower"
+            }
+        },
+        offset: 1,
+        width : 120
+    }, {
+	        title: {
+            text: '$ 51-250',
+            align: 'middle',
+            style: {
+                fontFamily: "BPG_upper"
+            }
+        },
+
+        categories: [
+				'2011',
+				'2012',
+				'2013',
+				'2015'
+        ],
+        labels: {
+            style: {
+                fontFamily: "BPG_lower"
+            }
+        },
+        offset: 1,
+        width :120,
+        left: 250
+    }, {
+	        title: {
+            text: '$ 251-400',
+            align: 'middle',
+            style: {
+                fontFamily: "BPG_upper"
+            }
+        },
+
+        categories: [
+				'2011',
+				'2012',
+				'2013',
+				'2015'
+        ],
+        labels: {
+            style: {
+                fontFamily: "BPG_lower"
+            }
+        },
+        offset: 1,
+        width :120,
+        left:430
+    }, {
+	        title: {
+            text: '$ 401+',
+            align: 'middle',
+            style: {
+                fontFamily: "BPG_upper"
+            }
+        },
+
+        categories: [
+				'2011',
+				'2012',
+				'2013',
+				'2015'
+        ],
+        labels: {
+            style: {
+                fontFamily: "BPG_lower"
+            }
+        },
+        offset: 1,
+        width :120,
+        left: 600
+    }],
+
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'პროპორცია (%)',
+            style: {
+                fontFamily: "BPG_upper"
+            }
+        }
+    },
+    plotOptions: {
+        series: {
+            borderWidth: 0,
+                        pointPadding: 0,
+                        groupPadding: 0,
+            shadow: false
+        
+		},
+        line: {
+            /// stacking: 'normal'
+								dataLabels: {
+						enabled: true
+					},
+						enableMouseTracking: true,
+            pointPadding: 0,
+            borderWidth: 0
+        
+		}
+    },
+    series: [
+	//// <=50
+	{
+        name: 'ყოველდღე / ყოველკვირა',
+        xAxis: 0,
+        stack: 0,
+        data: [16,32,21,22],
+        lineWidth: 3,
+		color:  '#a6611a',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: true
+    },	{
+        name: 'ყოველთვე',
+        xAxis: 0,
+        stack: 0,
+        data: [32,39,39,33],
+        lineWidth: 3,
+		color:  '#dfc27d',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: true
+    },{
+        name: 'უფრო იშვიათად',
+        xAxis: 0,
+        stack: 0,
+        data: [43,24,25,35],
+        lineWidth: 3,
+		color:  '#80cdc1',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: true
+    },{
+        name: 'არასოდეს',
+        xAxis: 0,
+        stack: 0,
+        data: [9,5,14,9],
+        lineWidth: 3,
+		color:  '#018571',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: true
+    },
+	//// ქალაქი
+	{
+        name: 'ყოველდღე / ყოველკვირა',
+        xAxis: 1,
+        stack: 0,
+        data: [5,9,7,10],
+        lineWidth: 3,
+		color:  '#a6611a',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: false
+    },	{
+        name: 'ყოველთვე',
+        xAxis: 1,
+        stack: 0,
+        data: [22,29,31,27],
+        lineWidth: 3,
+		color:  '#dfc27d',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: false
+    },{
+        name: 'უფრო იშვიათად',
+        xAxis: 1,
+        stack: 0,
+        data: [43,40,40,41],
+        lineWidth: 3,
+		color:  '#80cdc1',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: false
+    },{
+        name: 'არასოდეს',
+        xAxis: 1,
+        stack: 0,
+        data: [30,21,21,22],
+        lineWidth: 3,
+		color:  '#018571',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: false
+    },
+	//// სოფელი
+	{
+        name: 'ყოველდღე / ყოველკვირა',
+        xAxis: 2,
+        stack: 0,
+        data: [1,5,4,4],
+        lineWidth: 3,
+		color:  '#a6611a',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: false
+    },	{
+        name: 'ყოველთვე',
+        xAxis: 2,
+        stack: 0,
+        data: [7,9,14,11],
+        lineWidth: 3,
+		color:  '#dfc27d',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: false
+    },{
+        name: 'უფრო იშვიათად',
+        xAxis: 2,
+        stack: 0,
+        data: [26,42,44,38],
+        lineWidth: 3,
+		color:  '#80cdc1',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: false
+    },{
+        name: 'არასოდეს',
+        xAxis: 2,
+        stack: 0,
+        data: [66,44,39,48],
+        lineWidth: 3,
+		color:  '#018571',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+			style: {
+				fontFamily: "BPG_upper"
+			}
+        },
+        showInLegend: false
+    },
+	//// 401+
+	{
+        name: 'ყოველდღე / ყოველკვირა',
+        xAxis: 3,
+        stack: 0,
+        data: [0,1,1,2],
+        lineWidth: 3,
+		color:  '#a6611a',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: false
+    },	{
+        name: 'ყოველთვე',
+        xAxis: 3,
+        stack: 0,
+        data: [1,6,7,6],
+        lineWidth: 3,
+		color:  '#dfc27d',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: false
+    },{
+        name: 'უფრო იშვიათად',
+        xAxis: 3,
+        stack: 0,
+        data: [24,31,31,24],
+        lineWidth: 3,
+		color:  '#80cdc1',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+
+        },
+        showInLegend: false
+    },{
+        name: 'არასოდეს',
+        xAxis: 3,
+        stack: 0,
+        data: [75,62,61,69],
+        lineWidth: 3,
+		color:  '#018571',
+        marker: {
+            enabled: false
+        },
+        type: 'line',
+        tooltip: {
+			style: {
+				fontFamily: "BPG_upper"
+			}
+        },
+        showInLegend: false
+    }
+
+],
+    legend: {
+        align: 'center',
+        verticalAlign: 'bottom',
+        layout: 'horizontal',
+        itemStyle: {
+			fontFamily: "BPG_lower"
+        }
+
+    }
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+//  if (window.parent && window.parent.parent){
+//    window.parent.parent.postMessage(["resultsFrame", {
+//      height: document.body.getBoundingClientRect().height,
+//      slug: "None"
+//    }], "*")
+//  }
+</script>
+
+</body>
+
+</html>
+

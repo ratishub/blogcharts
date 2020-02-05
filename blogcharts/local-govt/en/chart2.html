@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Perceptions of professionalism, corruption, and nepotism in local government</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="http://blacklabel.github.io/grouped_categories/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'line',
+		inverted: true
+        },
+	
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>Thinking about your local government (Sakrebulo, Mayor’s office, Gamgeoba), do you or agree or disagree that ...?<br /><b>By Level of education (%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC/NDI Survey, June 2017)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        categories: [{
+			name: 'There is lack of professionalism in my local government', 
+			categories: ['Higher than secondary', 'Secondary technical', 'Secondary or lower']
+			},{
+			name: 'There is a problem of nepotism in my local government', 
+			categories: ['Higher than secondary', 'Secondary technical', 'Secondary or lower']
+			},{
+			name: 'There is a problem of corruption in my local government', 
+			categories: ['Higher than secondary', 'Secondary technical', 'Secondary or lower']
+			}]
+	}],
+	
+    yAxis: {
+        min: 0,
+        max: 100,
+		tickInterval: 20,
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: true
+    },
+    plotOptions: {
+        series: {
+            marker: {
+                radius: 5
+            }
+        }
+    },
+
+    series: [ { 
+		name: 'Agree',
+		color:  '#008000',
+		lineWidth: 0,
+        marker: {
+            symbol: 'circle'
+        },
+        states: {
+            hover: {
+                lineWidthPlus: 0
+            }
+        },
+        data: [71, 55, 52, 57, 46, 38, 41, 35, 31]
+    },{
+        name: 'Don\'t know',
+		color:  '#999999',
+		lineWidth: 0,
+        marker: {
+            symbol: 'circle'
+        },
+        states: {
+            hover: {
+                lineWidthPlus: 0
+            }
+        },
+        data: [9, 16, 18, 18, 26, 26, 21, 31, 28]
+    },{
+        name: 'Disagree',
+		color:  '#FF0000',
+		lineWidth: 0,
+        marker: {
+            symbol: 'circle'
+        },
+        states: {
+            hover: {
+                lineWidthPlus: 0
+            }
+        },
+        data: [20, 28, 30, 24, 27, 35, 38, 33, 41]
+    }]
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+

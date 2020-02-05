@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Survey incentives: When offering nothing is better than offering something</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://blacklabel.github.io/grouped_categories/grouped-categories.js"></script>
+
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+//        zoomType: 'xy',
+		inverted: true
+    },
+	credits: {
+		text: 'CRRC, 2017'
+	},
+    title: {
+        text: 'Odds from ordered logistic regressions',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+//    subtitle: {
+//        text: 'Odds from ordered logistic regressions',
+//		style:{
+//		fontFamily: "BPG_lower"
+//		}
+//    },
+    xAxis: [{
+		type: "category",
+        categories: [{
+			name: 'Model 1', 
+			categories: ['Treatment']
+			},{
+			name: 'Model 2', 
+			categories: ['Treatment', '36-55', '56+', 'Male', 'Capital', 'Urban']
+			}],
+			labels: {
+            style: {
+                fontFamily: "BPG_lower"
+            }
+        }
+	}],
+    yAxis: [{ // Primary yAxis
+		plotLines: [{
+            color: '#FF0000',
+            width: 2,
+            value: 1
+        }],
+        labels: {
+            style: {
+                fontFamily: "BPG_lower"
+            }
+        },
+		title: {
+				text: "Odds",
+				style:{
+				fontFamily: "BPG_lower"
+				}
+			}
+			},
+			{
+			title: false,
+			
+			series: {
+					lineWidth: 0
+				}	
+			}],
+
+    tooltip: {
+        shared: true
+    },
+
+    series: [{
+        name: '95% confidence intervals',
+        type: 'errorbar',
+        color: '#045a8d',
+		lineWidth: 2,
+        yAxis: 0,
+        data: [[0.6641251, 0.9666965],  [0.6621227, 0.9642395], [0.6564807, 0.9838144], [0.5628116, 1.125256], [0.7627831, 1.111135], [0.6947772, 1.113829], [0.7412572, 1.183277]],
+        tooltip: {
+            pointFormat: 'error range: {point.low}-{point.high}<br/>',
+			style:{
+				fontFamily: "BPG_lower"
+			}
+        }
+    }, {
+		name: 'Point estimate',
+		lineWidth: 0,
+            marker: {
+                enabled: true,
+                radius: 4
+            },
+
+		data: [0.8017167, 0.7990248, 0.8036495, 0.7957756, 0.9206244, 0.8796981, 0.9365421],
+		
+		showInLegend: false,
+        color: '#045a8d',
+		states: {
+                hover: {
+                    lineWidthPlus: 0
+                }
+           },
+        tooltip: {
+			style:{
+				fontFamily: "BPG_lower"
+			}
+        }
+
+	}]
+});
+
+//]]> 
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+</body>
+
+</html>
+

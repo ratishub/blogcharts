@@ -1,0 +1,230 @@
+
+#map{width:800px;
+	 height:400px;
+	 float: left;
+	 border:1px solid #ccc}
+	.info {
+		padding: 6px 8px;
+		font: 14px/16px Arial, Helvetica, sans-serif;
+		background: white;
+		background: rgba(255,255,255,0.8);
+		box-shadow: 0 0 15px rgba(0,0,0,0.2);
+		border-radius: 5px;
+	}
+	.info h4 {
+		margin: 0 0 5px;
+		color: #777;
+	}
+
+	.legend {
+		text-align: left;
+		line-height: 18px;
+		color: #555;
+	}
+	.legend i {
+		width: 18px;
+		height: 18px;
+		float: left;
+		margin-right: 8px;
+		opacity: 0.7;
+	}
+	
+#closeout{width:800px;
+	 height:100px;
+	 float: left;
+     margin-top: 0px;
+}
+
+#infobox{
+		  border:10px solid #ccc
+		  margin-top: 0px;
+		  margin-bottom: 0px;
+         margin-right: 0px;
+         margin-left: 810px;
+}
+
+.sp1{
+  font-family: "Arial";
+  font-weight: bold;
+  display:table;
+  color: #a81b17;
+  font-size: 16px;
+  text-align: center
+}
+.sp2{
+  font-family: "Arial";
+  font-weight: bold;
+  font-style: italic;
+  color: #003366;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp3{
+  font-family: "Arial";
+  font-style: normal;
+  color: #000000;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp4{
+  font-family: "Arial";
+  font-weight: bold;
+  font-style: italic;
+  color: #003366;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp5{
+  font-family: "Arial";
+  font-style: normal;
+  color: #000000;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp6{
+  font-family: "Arial";
+  font-weight: bold;
+  font-style: italic;
+  color: #003366;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp7{
+  font-family: "Arial";
+  font-style: normal;
+  color: #000000;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp8{
+  font-family: "Arial";
+  font-weight: bold;
+  font-style: italic;
+  color: #003366;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp9{
+  font-family: "Arial";
+  font-style: normal;
+  color: #000000;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp10{
+  font-family: "Arial";
+  font-weight: bold;
+  font-style: italic;
+  color: #003366;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp11{
+  font-family: "Arial";
+  font-style: normal;
+  color: #000000;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp12{
+  font-family: "Arial";
+  font-weight: bold;
+  font-style: italic;
+  color: #003366;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp13{
+  font-family: "Arial";
+  font-style: normal;
+  color: #000000;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp14{
+  font-family: "Arial";
+  font-weight: bold;
+  font-style: italic;
+  color: #003366;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp15{
+  font-family: "Arial";
+  font-style: normal;
+  color: #000000;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp16{
+  font-family: "Arial";
+  font-weight: bold;
+  font-style: italic;
+  color: #003366;
+  font-size: 12px;
+
+}
+
+.sp17{
+  font-family: "Arial";
+  font-style: normal;
+  color: #000000;
+  font-size: 10px;
+  text-align: center;
+}
+
+.sp18{
+  font-family: "Arial";
+  font-weight: bold;
+  font-style: italic;
+  color: #003366;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp19{
+  font-family: "Arial";
+  font-style: normal;
+  color: #000000;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp20{
+  font-family: "Arial";
+  font-weight: bold;
+  font-style: italic;
+  color: #003366;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp21{
+  font-family: "Arial";
+  font-style: normal;
+  color: #000000;
+  font-size: 12px;
+  text-align: center
+}
+
+.sp22{
+  font-family: "Arial";
+  font-style: normal;
+  color: #000000;
+  font-size: 12px;
+  text-align: center
+}

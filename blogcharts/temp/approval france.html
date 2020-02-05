@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>France: Approval Rating </title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="http://blacklabel.github.io/grouped_categories/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'France, Approval Rating'
+    },
+	subtitle: {
+        text: 'Source: Harris Poll. Sample size: 977'
+    },
+    xAxis: {
+        categories: [ 
+			'Macron (REM-ALDE)', 
+			'Mélenchon (FI-LEFT)', 
+			'Hamon (Gs-S&D)', 
+			'Bayrou (MoDem-ALDE)',
+			'Besancenot (NPA-LEFT)', 
+			'Dupont-Aignan (DLF-EFDD)', 
+			'Le Pen (RN-ENF)', 
+			'Ruffin (PD-*)', 
+			'Jadot (EELV-G/EFA]', 
+			'Wauquiez (LR-EPP)', 
+			'Faure (PS-S&D)', 
+			'Philippot (LP-EFDD)', 
+			'Laurent (PCF-LEFT)', 
+			'Lagarde: (UDI-ALDE)'
+        ]
+    },
+    yAxis: [{
+        min: 0,
+		max: 50,
+		labels: {
+			enabled: true
+		},
+        title: {
+            text: 'Approval'
+        }
+    }, {
+        title: {
+            text: ''
+        },
+        opposite: false
+    }],
+    legend: {
+        shadow: false
+    },
+    tooltip: {
+        shared: true
+    },
+    plotOptions: {
+        column: {
+            grouping: false,
+            shadow: false,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Approval',
+        color: 'rgba(165,170,217,1)',
+        data: [36,26,25,24,23,21,21,17,17,17,14,14,11,11],
+        pointPadding: 0.3,
+        pointPlacement: -0.2
+    }, {
+        name: 'Past Approval',
+        color: 'rgba(126,86,134,.9)',
+        data: [42,26,27,25,23,20,19,19,13,16,12,12,11,11],
+        pointPadding: 0.4,
+        pointPlacement: -0.2
+    }, ]
+	
+});
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>

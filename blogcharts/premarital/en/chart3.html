@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Dissecting Attitudes towards Pre-Marital Sex in Georgia</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="http://blacklabel.github.io/grouped_categories/grouped-categories.js"></script>
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+
+    title: {
+        text: '<b>In your opinion, how justified or unjustified is it for a Man/Woman to<br /> <b>have a sexual relationship before marriage?<br /><b>By Gender and Settlement Type (%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(EF/CRRC EU survey, 2017)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        categories: [{
+			name: 'Man having a sexual relationship before marriage', 
+			categories: [{
+					name: 'Female respondents',
+						categories: ['Capital', 'Other urban', 'Rural', 'Non-Georgian']
+					},{
+					name: 'Male respondents',
+						categories: ['Capital', 'Other urban', 'Rural', 'Non-Georgian']
+					}]
+			},{
+			name: 'Woman having a sexual relationship before marriage', 
+			categories: [{
+					name: 'Female respondents',
+						categories: ['Capital', 'Other urban', 'Rural', 'Non-Georgian']
+					},{
+					name: 'Male respondents',
+						categories: ['Capital', 'Other urban', 'Rural', 'Non-Georgian']
+					}]
+		}]
+	}],
+	
+    yAxis: {
+        min: 0,
+        max: 100,
+		tickInterval: 20,
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal',
+						dataLabels: {
+							enabled: true,
+						style: {
+							color: 'black',
+							fontWeight: 'bold',
+							textOutline: false
+					   }
+					}
+        }
+    },
+    series: [ { 
+		name: 'Always justified',
+		color:  '#009900',
+        data: [31,17,10,3,33,24,20,6,9,5,3,1,15,6,3,2],
+		index: 3
+    },{ 
+		name: 'Sometimes justified',
+		color:  '#ffc000',
+        data: [36,34,29,13,41,42,35,25,32,19,84,5,29,27,13,8],
+		index: 2
+    },{ 
+		name: 'Never justified',
+		color:  '#ff0000',
+        data: [27,44,49,65,18,29,38,54,56,74,10,81,50,62,82,82],
+		index: 1
+    },{ 
+		name: 'DK/RA',
+		color:  '#e7e6e6',
+        data: [6,5,11,20,9,5,7,15,3,2,3,15,7,6,2,8],
+		index: 0
+    }]
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Temporary emigration intentions from Georgia: Do migration networks count?</title>
+
+  
+</head>
+
+<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="http://blacklabel.github.io/grouped_categories/grouped-categories.js"></script>
+
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+ 
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+	credits: {enabled: false
+	},
+    title: {
+        text: '<b>If you had a chance, would you leave Georgia for a certain period of<br /> <b>time to live somewhere else? (%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC Caucasus Barometer, Georgia)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },    
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+
+    xAxis: [{
+        categories: ["2010", "2011", "2012", "2013", "2015", "2017"]
+    }],
+    yAxis: {
+        min: 0,
+		max: 100,
+        title: {
+            text: null
+        }},
+	
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: true
+        }
+    },
+    series: [{
+        name: 'Yes',
+		color: "#33a02c",
+		visible: true,
+        data: [47, 47, 42, 44, 51, 55]
+    }, {
+        name: 'No',
+		color: "#e31a1c",
+		visible: true,
+        data: [51, 50, 54, 54, 48, 44]
+    }, {
+        name: 'DK/RA',
+		color: "#a5a5a1",
+		visible: true,
+        data: [2, 3, 4, 3, 2, 1]
+    }]
+});
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+

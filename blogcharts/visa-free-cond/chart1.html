@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Visa liberalization: How much do people in Georgia know about the conditions of visa-free travel to the EU?</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+	credits: {enabled: false
+	},
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: '<b>Which are the documents that a Georgian citizen needs in order to travel to the Schengen zone countries visa-free? <b/><br /> <b>By In the next 12 months, will you personally travel or not to a Schengen zone country without a visa?<br/>(% of those mentioning the respective category)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(EF/CRRC EU survey, 2017)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+	responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+
+
+    xAxis: {
+
+        categories: [
+				'Biometric passport',
+				'Travel insurance',
+				'Address where will stay',
+				'Return ticket',
+				'Financial means'
+        ],
+        crosshair: true,
+        labels: {
+            style: {
+                fontFamily: "BPG_lower"
+            }
+        },
+    },
+    yAxis: {
+        min: 0,
+		max: 100,
+        title: {
+            text: '%',
+				style:{
+					fontFamily: "BPG_upper"
+				}	
+        }
+    },
+
+    plotOptions: {
+			bar: {
+					dataLabels: {
+						enabled: true
+					},
+			enableMouseTracking: true,
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+		name: "Will travel",
+        data: [90, 57, 46, 45, 33],
+		color: '#97B9E0'
+		},{
+		name: "Will not travel",
+        data: [76, 42, 39, 31, 21],
+		color: '#5089BC'
+		}],
+    legend: {
+        align: 'center',
+        verticalAlign: 'bottom',
+        layout: 'horizontal',
+        itemStyle: {
+			fontFamily: "BPG_lower"
+        }
+
+    }
+});
+//]]> 
+
+</script>
+
+  <script>
+ // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>A generation gap in retirement planning in Georgia</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+	credits: {enabled: false
+	},
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Currently, how do you provide or plan to provide for yourself in old age? (%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC/NDI Survey, March 2016)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+
+
+    xAxis: {
+
+        categories: [
+				'Rely or plan to rely on<br/>fixed pension from the government',
+				'Rely or plan to rely on<br/>support from children',
+				'Work or plan to work when I am old',
+				'Bought or plan to buy<br/>a house/apartment for rent or sale',
+				'Made or plan to make other investments',
+				'Saved or plan to save money,<br/>but not in the bank',
+				'Other',
+				'I have done nothing',
+				'I have never thought about it/DK'
+        ],
+        crosshair: true,
+        labels: {
+            style: {
+                fontFamily: "BPG_lower"
+            }
+        },
+    },
+    yAxis: {
+        min: 0,
+		max: 100,
+        title: {
+            text: '%',
+				style:{
+					fontFamily: "BPG_upper"
+				}	
+        }
+    },
+
+    plotOptions: {
+			bar: {
+					dataLabels: {
+						enabled: true
+					},
+			enableMouseTracking: true,
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+		name: "Proportion (%)",
+        data: [49, 31, 15, 5, 5, 5, 8, 14, 13],
+		color: '#66c2a5'
+		}],
+    legend: {
+        align: 'center',
+        verticalAlign: 'bottom',
+        layout: 'horizontal',
+        itemStyle: {
+			fontFamily: "BPG_lower"
+        }
+
+    }
+});
+//]]> 
+
+</script>
+
+  <script>
+ // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+</body>
+
+</html>
+

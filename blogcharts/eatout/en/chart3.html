@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Women significantly less likely to go out to eat in Georgia</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="http://blacklabel.github.io/grouped_categories/grouped-categories.js"></script>
+        <div class="centerTest">
+            <span style="width: 100%;text-align: center">During the last 6 months, did you go to a restaurant?</br> Effects of age and years of education by Gender</br> Predicted probabilities, 95% Confidence Intervals </span>
+        </div>
+
+<div id="container1" style="min-width:300px;
+    height:250px;
+    margin-right:10px;
+    float:left;"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div id="container2" style="min-width:300px;
+    height:250px;
+    margin-right:10px;
+    float:left;"></div>
+
+<div class="centerLeft">
+<span style="width: 80%;text-align: right">Caucasus Barometer 2017, Georgia </span>
+</div>
+
+ <style type="text/css">
+.centerTest {
+    width:90%;
+    text-align:center;
+}
+.centerLeft {
+    width:20%;
+    text-align:left;
+	font-size: 12px;
+}
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+
+
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container1', {
+    chart: {
+        zoomType: 'xy'
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+	title: null,
+	
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+	        title: {
+            text: 'Age'
+        },
+			categories: [18,23,28,33,38,43,48,53,58,63,68,73,78,83,88,93,98]
+			}],
+	
+    yAxis: [{
+	    gridLineWidth: 0,
+        minorGridLineWidth: 0,
+        min: 0,
+        max: 1,
+		tickInterval: 0.2,
+		labels: {
+			enabled: true
+		},
+        title: {
+            text: 'Probability of going to a restaurant'
+        }
+    },
+			{
+			title: false,
+			
+			series: {
+					lineWidth: 0
+				}	
+			}],
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		enabled: true
+    },
+    plotOptions: {
+        series: {
+				dataLabels: {
+					enabled: false,
+					style: {
+						color: 'black',
+						fontWeight: 'bold',
+						textOutline: false
+				   }
+			},
+			
+        }
+    },
+    series: [
+	{ 
+		name: 'Male',
+		color:  '#3399ff',
+		type: 'spline',
+        data: [0.8239476,0.789005,0.7498778,0.7068375,0.6603501,0.611064,0.5597814,0.5074145,0.4549337,0.4033104,0.3534624,0.3062044,0.2622095,0.2219815,0.1858415,0.1539286,0.1262128]
+    },{ 
+		name: 'Female',
+		color:  '#a9d18e',
+		type: 'spline',
+        data: [0.7253755,0.6802677,0.632068,0.5815184,0.5294911,0.4769386,0.4248389,0.3741386,0.3257012,0.2802635,0.2384028,0.2005176,0.1668227,0.1373567,0.1120026,0.0905175,0.0725675]
+    },{
+		name: 'Male',
+		color: '#3399ff',
+		type: 'errorbar',
+		data: [[0.775025, 0.8728702],[0.738223, 0.839787],[0.6981237, 0.801632],[0.6549136, 0.7587615],[0.6088295, 0.7118707],[0.5601728, 0.6619553],[0.5093589, 0.6102039],[0.4569968, 0.5578322],[0.4039546, 0.5059128],[0.3513463, 0.4552746],[0.3004165, 0.4065083],[0.2523718, 0.360037],[0.2082304, 0.3161886],[0.1687264, 0.2752366],[0.1342728, 0.2374103],[0.10497, 0.2028872],[0.0806462, 0.1717793]]
+	},{
+		name: 'Female',
+		color: '#a9d18e',
+		type: 'errorbar',
+		data: [[0.6745013, 0.7762496],[0.6308259, 0.7297095],[0.5847807, 0.6793553],[0.5366487, 0.6263882],[0.4867553, 0.5722268],[0.4355678, 0.5183094],[0.3838288, 0.4658489],[0.3326102, 0.4156669],[0.2831881, 0.3682144],[0.2368081, 0.323719],[0.1944838, 0.2823218],[0.1568953, 0.24414],[0.1243715, 0.2092739],[0.0969224, 0.177791],[0.0742984, 0.1497068],[0.0560632, 0.1249718],[0.0416689, 0.1034661]]
+	}]
+});
+
+Highcharts.chart('container2', {
+    chart: {
+        zoomType: 'xy'
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+	title: null,
+	
+		responsive: {
+			  rules: [{
+				condition: {
+				  maxWidth: 500
+				}
+			  }]
+	},
+	
+    xAxis: [{
+        title: {
+            text: 'Years of education'
+        },
+			categories: [4, 6 ,8 , 10, 12, 14, 16, 18, 20]
+			}],
+	
+    yAxis: [{
+	    gridLineWidth: 0,
+        minorGridLineWidth: 0,
+        min: 0,
+        max: 1,
+		tickInterval: 0.2,
+		labels: {
+			enabled: false
+		},
+        title: {
+            text: ''
+        }
+    },
+			{
+			title: false,
+			
+			series: {
+					lineWidth: 0
+				}	
+			}],
+    legend: {
+        //align: 'center',
+        //verticalAlign: 'top',
+        //floating: true,
+		enabled: true
+    },
+    plotOptions: {
+        series: {
+				dataLabels: {
+					enabled: false,
+					style: {
+						color: 'black',
+						fontWeight: 'bold',
+						textOutline: false
+				   }
+			},
+			
+        }
+    },
+    series: [
+	{ 
+		name: 'Male',
+		color:  '#3399ff',
+		type: 'spline',
+        data: [0.3579476,0.4061121,0.4553527,0.5048798,0.5539318,0.6018063,0.6478798,0.6916193,0.7325882]
+    },{ 
+		name: 'Female',
+		color:  '#a9d18e',
+		type: 'spline',
+        data: [0.2502834,0.2927331,0.3380343,0.385505,0.4343859,0.4838869,0.5332302,0.5816853,0.6285932]
+    },{
+		name: 'Male',
+		color: '#3399ff',
+		type: 'errorbar',
+		data: [[0.2648663, 0.4510289],[0.3265692, 0.485655],[0.3896988, 0.5210066],[0.4512679, 0.5584917],[0.5076023, 0.6002614],[0.5558047, 0.647808],[0.596338, 0.6994216],[0.6319101, 0.7513284],[0.6646899, 0.8004865]]
+	},{
+		name: 'Female',
+		color: '#a9d18e',
+		type: 'errorbar',
+		data: [[0.1666473, 0.3339196],[0.218565, 0.3669013],[0.2755611, 0.4005075],[0.3353382, 0.4356718],[0.3941368, 0.474635],[0.4466031, 0.5211707],[0.489974, 0.5764865],[0.5271403, 0.6362303],[0.5614286, 0.6957579]]
+	}]
+});
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Visa Liberalization: Expectations in Georgia</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+	credits: {enabled: false
+	},
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Do you agree or disagree with the following? (%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC/NDI Survey, April, 2017)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+
+
+    xAxis: {
+        categories: [
+				'Even if we have visa free regime with the EU countries,<br/>ordinary people won’t be able to afford traveling in the EU',
+				'As a result of the visa free regime<br/>with EU countries, it will be easier for Georgian citizens<br/>to travel to the EU to receive medical treatment',
+				'After the visa free regime enters into force,<br/>many Georgians will emigrate',
+				'As a result of the visa free regime with EU countries,<br/>refugees from other countries will come to Georgia',
+				'The visa free regime with the EU countries will result<br/>in the loss of the Georgian mentality',
+				'The Georgian economy will be harmed<br/>as a result of the visa free regime with the EU countries'
+        ],
+        crosshair: true,
+        labels: {
+            style: {
+                fontFamily: "BPG_lower"
+            }
+        },
+    },
+    yAxis: {
+		max: 100,
+        min: 0,
+        title: {
+            text: '%',
+				style:{
+					fontFamily: "BPG_upper"
+				}	
+        }
+    },
+
+    plotOptions: {
+			series: {
+				stacking: 'normal'
+			},
+
+			bar: {
+			dataLabels: {
+				enabled: true,
+				color: '#444444',
+				style: {
+						fontWeight: 'bolder',
+						textOutline: false
+						},
+				shadow: false,
+				inside: true
+				
+			},
+			enableMouseTracking: true,
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Agree',
+        data: [78, 71, 67, 49, 22, 14],
+		color: '#66c2a5',
+		index: 2
+
+    }, {
+        name: 'Disagree',
+        data: [14, 16, 22, 31, 65, 74],
+		color: '#fc8d62',
+		index: 1
+    }, {
+        name: 'DK/RA',
+        data: [8, 13, 11, 20, 13, 12],
+		color: '#8da0cb',
+		index: 0
+    }],
+    legend: {
+        align: 'center',
+		reversed: 'true',
+        verticalAlign: 'bottom',
+        layout: 'horizontal',
+        itemStyle: {
+			fontFamily: "BPG_lower"
+        }
+
+    }
+});
+//]]> 
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Attitudes towards immigrants in Georgia, and how they differ based on a person’s economic situation</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 100; height: 200; margin: 0 auto"></div>
+
+  
+
+ <style type="text/css">
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+	credits: {enabled: false
+	},
+    title: {
+        text: 'How would you characterize your attitude towards the foreigners <br/>who come to Georgia and stay here for longer than 3 months? <br/>By Relative to most of the households around you,<br/>would you describe the current economic condition of your household as ...? (%)',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+    subtitle: {
+        text: '(CRRC Caucasus Barometer 2015, Georgia)',
+		style:{
+			fontFamily: "BPG_lower"
+		}
+    },
+    xAxis: {
+        categories: ['Good', 'Fair', 'Bad'],
+		style: {
+            fontFamily: "BPG_upper"
+        }
+    },
+    yAxis: {
+        min: 0,
+        max: 100,
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal',
+						dataLabels: {
+							enabled: true,
+									style: {
+										color: '#333',
+										fontWeight: 'bold',
+										textOutline: false
+								   }
+					}
+        }
+    },
+    series: [{
+        name: 'Bad attitude',
+		color:  '#d7191c',
+        data: [7, 4, 8]
+    }, {
+        name: 'Neutral attitude',
+		color:  '#ffffbf',
+        data: [53, 62, 63]
+    }, {
+        name: 'Good attitude',
+		color:  '#1a9641',
+        data: [35, 26, 16]
+    }]
+
+});
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
