@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <style type="text/css">
+    
+  </style>
+
+  <title>Despite large drop in son preference, a third of Georgians still prefer having a boy to a girl</title>
+
+  
+</head>
+
+<body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+        <div class="centerTest">
+            <span style="width: 100%;text-align: center;font-family: BPG_upper; font-weight: bold">ბავშვის სასურველი სქესი</span> </br><span style="width: 100%;text-align: center; font-size: 12px;">(CRRC-ის ,,კავკასიის ბარომეტრი'', 2019 წ., საქართველო)</span>
+        </div>
+
+<div id="container1" style="min-width:200px;
+    height:300px;
+    margin-right:10px;
+    float:left;"></div>
+<div class="spacer"></div>
+<div id="container2" style="min-width:200px;
+    height:300px;
+    margin-right:10px;
+	float:left;"></div>
+<div class="spacer"></div>
+<div id="container3" style="min-width:200px;
+    height:300px;
+    margin-right:10px;
+	float:left;"></div>
+<div class="spacer"></div>
+<div id="container4" style="min-width:200px;
+    display:inline;
+	height:300px;
+    margin-right:10px;
+	float:left;"></div>
+<div class="spacer"></div>
+<div id="legend" style="position:absolute; left:-600px; top:300px;" ></div>
+
+<style type="text/css">
+
+@font-face {
+    font-family: "BPG_upper";
+	src:url("fonts/BPG_GEL_Excelsior_Caps.ttf");
+}
+@font-face {
+    font-family: "BPG_lower";
+	src:url("fonts/BPG_Excelsior.ttf");
+}
+.centerTest {
+    width:90%;
+    text-align:center;
+	font-family: "BPG_lower";
+}
+#legend {
+    width:120%;
+    text-align:center;
+	font-family: "BPG_lower";
+	font-size: 10px;
+}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container1', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>ბიჭი',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Pro-Western",
+		
+		categories: ["ქალი", "36-55 წლის", "55 წელზე უფროსი", "დედაქალაქი", "სხვა ქალაქი", "ეთნ. უმცირესობა", "საშუალო ან უფრო დაბალი განათლება", "საშუალო სპეციალური", "კეთილდღეობის ინდექსი"]
+    },
+	yAxis : {
+	min: -0.25,
+    max: 0.25,
+	title: "Effect on gender preference",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "ეფექტი გენდერულ პრეფერენციაზე",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [-0.1840315,0.0520011,0.0374258,-0.1210094,-0.1445766,0.0266786,0.0698968,0.0614971],
+		color: '#004d99',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[-0.234985, -0.1330781], [-0.0123976, 0.1163999], [-0.0215227, 0.0963743], [-0.190652, -0.0513668], [-0.2111537, -0.0779995], [-0.0723484, 0.1257057], [0.0056078, 0.1341858], [-0.0147029, 0.137697]],
+		color: '#004d99'
+    }]
+
+
+});
+
+Highcharts.chart('container2', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>ქალიშვილი',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on gender preference",
+		
+		categories: ["ქალი", "36-55 წლის", "55 წელზე უფროსი", "დედაქალაქი", "სხვა ქალაქი", "ეთნ. უმცირესობა", "საშუალო ან უფრო დაბალი განათლება", "საშუალო სპეციალური", "კეთილდღეობის ინდექსი"]
+		},
+	yAxis : {
+		min: -0.25,
+    max: 0.25,
+	title: "Effect on gender preference",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "ეფექტი გენდერულ პრეფერენციაზე",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.0770307,-0.0174952,0.0471273,0.0566528,0.0481972,0.0159832,-0.039929,-0.0097253],
+		color: '#800000',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[0.0445703, 0.1094911], [-0.0579127, 0.0229223], [0.0029869, 0.0912678], [0.0124323, 0.1008733], [0.0081553, 0.088239], [-0.0340489, 0.0660153], [-0.0798505, -0.00000747], [-0.0534414, 0.0339907]],
+		color: '#800000'
+    }]
+
+
+});
+
+Highcharts.chart('container3', {
+    chart: {
+        zoomType: 'xy',
+		inverted: true
+    },
+	    exporting: {
+        enabled: false
+    },
+
+	credits: {enabled: false
+	},
+	
+	title: {
+        text: '<b>არ აქვს მნიშვნელობა',
+		style:{
+		fontFamily: "BPG_upper"
+		}
+    },
+	responsive: {
+	  rules: [{
+		condition: {
+		  maxWidth: 500
+		},
+		chartOptions: {
+		  legend: {
+			enabled: false
+		  }
+		}
+	  }]
+	},
+
+    xAxis: {
+		title: "Effect on gender preference",
+		
+		categories: ["ქალი", "36-55 წლის", "55 წელზე უფროსი", "დედაქალაქი", "სხვა ქალაქი", "ეთნ. უმცირესობა", "საშუალო ან უფრო დაბალი განათლება", "საშუალო სპეციალური", "კეთილდღეობის ინდექსი"]
+    },
+	yAxis : {
+		min: -0.25,
+    max: 0.25,
+	title: "Effect on gender preference",
+	plotLines: [{
+		color: 'red', // Color value
+		// dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+		value: 0, // Value of where the line will appear
+		width: 2 // Width of the line    
+	}]
+	},
+    plotOptions: {
+        scatter: {
+            marker: {
+                radius: 5,
+                states: {
+                    hover: {
+                        enabled: true,
+                        lineColor: 'rgb(100,100,100)'
+                    }
+                }
+            },
+            states: {
+                hover: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+     series: [{
+		name: "ეფექტი გენდერულ პრეფერენციაზე",
+		showInLegend: false,
+		type: 'scatter',
+		marker: {
+            symbol: 'diamond'
+        },
+        data: [0.1070008,-0.0345059,-0.0845532,0.0643566,0.0963794,-0.0426618,-0.0299679,-0.0517717],
+		color: '#800000',
+		tooltip: {
+            pointFormat: '<span style="font-weight: bold; color: {series.color}"><b>{point.y}</b> '
+        }
+    },{
+		name: null,
+		type: 'errorbar',
+        data: [[0.0520936, 0.1619081], [-0.1026456, 0.0336337], [-0.1478656, -0.0212407], [-0.0116685, 0.1403817], [0.0231379, 0.1696209], [-0.1539085, 0.0685848], [-0.0991734, 0.0392377], [-0.1328107, 0.0292672]],
+		color: '#800000'
+    }]
+
+
+});
+
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  // if (window.parent && window.parent.parent){
+      // window.parent.parent.postMessage(["resultsFrame", {
+        // height: document.body.getBoundingClientRect().height,
+        // slug: "None"
+      // }], "*")
+    // }
+</script>
+
+</body>
+
+</html>
+
